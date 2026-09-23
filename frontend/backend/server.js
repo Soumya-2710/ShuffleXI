@@ -10,8 +10,10 @@ const clubRoutes = require('./routes/clubRoutes');
 const playerRoutes = require('./routes/playerRoutes');
 const squadRoutes = require('./routes/squadRoutes');
 
-// Load env vars
-dotenv.config();
+const path = require('path');
+
+// Load env vars from current directory (.env)
+dotenv.config({ path: path.join(__dirname, '.env') });
 
 // Connect to MongoDB
 connectDB();

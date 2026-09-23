@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Full-Stack MERN Football Squad Building Game",
   "scripts": {
-    "start": "node backend/server.js",
-    "backend": "npm --prefix backend run dev",
+    "start": "node frontend/backend/server.js",
+    "dev": "npm --prefix frontend run dev",
     "frontend": "npm --prefix frontend run dev",
-    "server": "npm --prefix backend run dev",
-    "client": "npm --prefix frontend run dev",
-    "seed": "npm --prefix backend run seed",
+    "backend": "npm --prefix frontend run backend",
+    "seed": "npm --prefix frontend run seed",
     "build": "npm --prefix frontend run build"
   },
   "keywords": [

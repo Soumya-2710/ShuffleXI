@@ -84,66 +84,52 @@ graph TB
 
 ```
 football-game/
-├── package.json                   # Root orchestrator: scripts to run, seed, and build both apps
+├── package.json                   # Root orchestrator
 ├── .gitignore                     # Excludes node_modules/, .env, dist/, build logs
 ├── .env.example                   # Root environment template
 ├── README.md                      # Project documentation and quickstart
 ├── TECHNICAL_PLAN.md              # Detailed architecture and engineering plan (this file)
 │
-├── backend/                       # BACKEND (Node.js + Express)
-│   ├── config/
-│   │   └── db.js                  # Mongoose MongoDB connection logic with graceful exit
-│   ├── models/
-│   │   ├── League.js              # League schema (name, country, logo)
-│   │   ├── Club.js                # Club schema (name, league ref, logo, stadium)
-│   │   └── Player.js              # Player schema (name, position, 6 attributes 1-99)
-│   ├── controllers/
-│   │   ├── leagueController.js    # Logic for GET /api/leagues and /api/leagues/:id
-│   │   ├── clubController.js      # Logic for GET /api/clubs with ?league filter
-│   │   └── playerController.js    # Logic for player queries & POST /api/squad/rating
-│   ├── routes/
-│   │   ├── leagueRoutes.js        # Maps routes to leagueController
-│   │   ├── clubRoutes.js          # Maps routes to clubController
-│   │   ├── playerRoutes.js        # Maps routes to playerController
-│   │   └── squadRoutes.js         # Dedicated route for /api/squad/rating
-│   ├── middleware/
-│   │   └── errorHandler.js        # 404 handler and global exception middleware
-│   ├── utils/
-│   │   └── ratingCalculator.js    # 4-3-3 team rating mathematical logic
-│   ├── seed/
-│   │   └── seed.js                # DB populator (2 leagues, 6 clubs, 48 players)
-│   ├── server.js                  # Express app entry, middleware stack, listener
-│   ├── package.json               # Backend dependencies and scripts
-│   └── .env                       # Local secrets (PORT=5000, MONGO_URI)
-│
-└── frontend/                      # FRONTEND (React + Vite)
+└── frontend/                      # Main Workspace (React + Vite + Backend)
     ├── index.html                 # HTML shell with meta tags and Google Fonts
     ├── vite.config.js             # Vite build options + proxy config (/api -> :5000)
-    ├── package.json               # Frontend dependencies and scripts
-    └── src/
-        ├── main.jsx               # ReactDOM root, BrowserRouter, SquadProvider
-        ├── App.jsx                # Route definitions and persistent layout shell
-        ├── index.css              # Global tokens, dark theme, utilities, animations
-        ├── api/
-        │   └── axiosClient.js     # Axios instance pointing to /api
-        ├── context/
-        │   └── SquadContext.jsx   # Squad state (useReducer), localStorage persistence
-        ├── components/
-        │   ├── Navbar.jsx / .css  # Header navigation with real-time squad counter
-        │   ├── Footer.jsx         # Footer branding
-        │   ├── PlayerCard.jsx / .css # FIFA-style player card with stat pills
-        │   ├── RatingBar.jsx / .css # Animated 0-99 horizontal progress bars
-        │   ├── FormationPitch.jsx / .css # SVG/CSS grass football pitch with field markings
-        │   ├── SquadSlot.jsx / .css # Pitch position slot with OOP warning tag
-        │   ├── TeamRating.jsx / .css# Breakdown card (GK/DEF/MID/ATK) & API verification
-        │   └── PlayerSelectModal.jsx / .css # Searchable modal to pick player for a slot
-        └── pages/
-            ├── HomePage.jsx / .css     # Hero showcase, live DB counters, feature cards
-            ├── LeaguesPage.jsx / .css  # Major league directory
-            ├── ClubsPage.jsx / .css    # Clubs within a league
-            ├── PlayersPage.jsx / .css  # Club roster with filters and stat sorting
-            ├── PlayerDetailPage.jsx / .css # 6 attribute radar bars and tactical insights
-            └── SquadBuilderPage.jsx / .css # 4-3-3 tactical board with Auto-Draft
+    ├── package.json               # Combined scripts (concurrently Vite + Express)
+    ├── src/
+    │   ├── main.jsx               # ReactDOM root, BrowserRouter, SquadProvider
+    │   ├── App.jsx                # Route definitions and persistent layout shell
+    │   ├── index.css              # Global tokens, dark theme, utilities, animations
+    │   ├── api/
+    │   │   └── axiosClient.js     # Axios instance pointing to /api
+    │   ├── context/
+    │   │   └── SquadContext.jsx   # Squad state (useReducer), localStorage persistence
+    │   ├── components/
+    │   │   ├── Navbar.jsx / .css  # Header navigation with real-time squad counter
+    │   │   ├── Footer.jsx         # Footer branding
+    │   │   ├── PlayerCard.jsx / .css # FIFA-style player card with stat pills
+    │   │   ├── RatingBar.jsx / .css # Animated 0-99 horizontal progress bars
+    │   │   ├── FormationPitch.jsx / .css # SVG/CSS grass football pitch with field markings
+    │   │   ├── SquadSlot.jsx / .css # Pitch position slot with OOP warning tag
+    │   │   ├── TeamRating.jsx / .css# Breakdown card (GK/DEF/MID/ATK) & API verification
+    │   │   └── PlayerSelectModal.jsx / .css # Searchable modal to pick player for a slot
+    │   └── pages/
+    │       ├── HomePage.jsx / .css     # Hero showcase, live DB counters, feature cards
+    │       ├── LeaguesPage.jsx / .css  # Major league directory
+    │       ├── ClubsPage.jsx / .css    # Clubs within a league
+    │       ├── PlayersPage.jsx / .css  # Club roster with filters and stat sorting
+    │       ├── PlayerDetailPage.jsx / .css # 6 attribute radar bars and tactical insights
+    │       └── SquadBuilderPage.jsx / .css # 4-3-3 tactical board with Auto-Draft
+    │
+    └── backend/                   # Embedded Backend Service (Node.js + Express)
+        ├── server.js              # Express app entry, middleware stack, listener
+        ├── package.json           # Express, Mongoose, Dotenv, Cors
+        ├── .env                   # Local secrets (PORT=5000, MONGO_URI)
+        ├── config/db.js           # Mongoose MongoDB connection logic
+        ├── middleware/            # 404 handler and global exception middleware
+        ├── models/                # Mongoose schemas (League, Club, Player)
+        ├── routes/                # REST routes (/api/leagues, /api/clubs, /api/players, /api/squad)
+        ├── controllers/           # Business logic & response formatting
+        ├── utils/                 # 4-3-3 team rating mathematical logic
+        └── seed/seed.js           # DB populator (2 leagues, 6 clubs, 48 players)
 ```
 
 ---

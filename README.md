@@ -6,6 +6,7 @@ A full-stack football squad-building web application built with the **MERN** sta
 
 ## 🌟 Features
 
+- **Single-Command Launch**: Run `cd frontend && npm run dev` to start both the Vite frontend and the Express backend simultaneously.
 - **League & Club Exploration**: Browse through major football leagues, drill down into clubs, and inspect full rosters.
 - **Detailed Player Cards**: 6 core performance attributes (Pace, Shooting, Passing, Dribbling, Defending, Physical) mapped with visual stat bars and tier badges.
 - **Tactical 4-3-3 Pitch**: Interactive football pitch with 11 tactical slots (1 GK, 4 DEF, 3 MID, 3 ATK).
@@ -24,30 +25,36 @@ A full-stack football squad-building web application built with the **MERN** sta
 
 ```
 football-game/
-├── frontend/               # React + Vite frontend
-│   ├── src/
-│   │   ├── api/            # Axios API client
-│   │   ├── components/     # Navbar, PlayerCard, FormationPitch, SquadSlot, TeamRating, etc.
-│   │   ├── context/        # SquadContext (squad state, rating engine)
-│   │   ├── pages/          # Home, Leagues, Clubs, Players, PlayerDetail, SquadBuilder
-│   │   ├── App.jsx
-│   │   └── index.css       # Global design system & theme tokens
-│   └── vite.config.js      # Vite dev server + proxy to Express
+├── package.json                   # Root orchestrator
+├── .env.example                   # Environment template
+├── .gitignore                     # Excludes node_modules, .env, dist
+├── README.md                      # Overview & quickstart
+├── TECHNICAL_PLAN.md              # In-depth architectural & technical specification
 │
-├── backend/                # Node.js + Express backend
-│   ├── config/             # MongoDB connection (Mongoose)
-│   ├── controllers/        # League, Club, and Player controllers
-│   ├── models/             # Mongoose schemas (League, Club, Player)
-│   ├── routes/             # REST routes (/api/leagues, /api/clubs, /api/players, /api/squad)
-│   ├── seed/               # Database seeder (2 leagues, 6 clubs, 48 players)
-│   ├── utils/              # Team rating calculator logic
-│   └── server.js           # Server entry point
-│
-├── .env.example
-├── .gitignore
-├── package.json            # Unified scripts for frontend and backend
-├── TECHNICAL_PLAN.md       # Comprehensive architectural and technical specification
-└── README.md
+└── frontend/                      # Main Workspace
+    ├── index.html                 # HTML shell (Outfit & Inter fonts)
+    ├── vite.config.js             # Vite dev server + proxy to port 5000
+    ├── package.json               # Frontend dependencies + combined scripts
+    ├── src/
+    │   ├── main.jsx               # Entry point
+    │   ├── App.jsx                # Router & layout
+    │   ├── index.css              # Global design system & theme tokens
+    │   ├── api/axiosClient.js     # Axios API client
+    │   ├── context/SquadContext.jsx # Squad state & chemistry math
+    │   ├── components/            # UI components (Pitch, Slots, Cards, Nav)
+    │   └── pages/                 # Full pages (Home, Leagues, Clubs, Roster, Squad)
+    │
+    └── backend/                   # Backend API (Node.js + Express)
+        ├── server.js              # Express app entry & listener
+        ├── package.json           # Express, Mongoose, Dotenv, Cors
+        ├── .env                   # Local secrets (PORT=5000, MONGO_URI)
+        ├── config/db.js           # MongoDB connection handler
+        ├── middleware/            # Error handling & 404 middleware
+        ├── models/                # Mongoose schemas (League, Club, Player)
+        ├── routes/                # REST routes (/api/leagues, /api/clubs, /api/players, /api/squad)
+        ├── controllers/           # Controllers handling business logic
+        ├── utils/                 # Team rating calculation engine
+        └── seed/seed.js           # Database seeder (48 players, 6 clubs, 2 leagues)
 ```
 
 ---
@@ -58,39 +65,32 @@ football-game/
 - [Node.js](https://nodejs.org/) (v18+)
 - [MongoDB](https://www.mongodb.com/) (or Docker)
 
-### 2. Environment Variables
-Create a `.env` file in `backend/` (or copy `.env.example`):
-```env
-MONGO_URI=mongodb://localhost:27017/football-game
-PORT=5000
-NODE_ENV=development
+### 2. Run Everything in One Command!
+```bash
+# Navigate to frontend
+cd frontend
+
+# Start BOTH Vite frontend and Express backend together
+npm run dev
 ```
 
-### 3. Quick Run via Root Scripts
-From the root directory:
+- **Frontend:** [http://localhost:3000](http://localhost:3000)
+- **Backend API:** [http://localhost:5000](http://localhost:5000)
+
+### 3. Other Useful Commands (Inside `frontend/`)
 ```bash
-# Seed the database
+# Re-seed the database with 48 players
 npm run seed
 
-# Run backend (port 5000)
+# Run ONLY the backend
 npm run backend
 
-# Run frontend (port 3000)
-npm run frontend
+# Run ONLY the frontend
+npm run dev:frontend
+
+# Build for production
+npm run build
 ```
-
-Or run individually:
-```bash
-# Backend
-cd backend
-npm run dev
-
-# Frontend
-cd frontend
-npm run dev
-```
-
-Visit **http://localhost:3000** in your browser.
 
 ---
 
@@ -111,4 +111,4 @@ Visit **http://localhost:3000** in your browser.
 
 ## 📖 Technical Documentation
 
-For an in-depth breakdown of the system design, how React talks to Node, MongoDB schema relational design, algorithms, and future phases, read **[TECHNICAL_PLAN.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/TECHNICAL_PLAN.md)**.
+Read **[TECHNICAL_PLAN.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/TECHNICAL_PLAN.md)** for a complete step-by-step breakdown of the database schemas, API lifecycles, React Context state flow, and mathematics.
