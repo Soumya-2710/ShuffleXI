@@ -109,6 +109,7 @@ npm run build
 
 ---
 
-## 📖 Technical Documentation
+## 📖 Documentation & Guides
 
-Read **[TECHNICAL_PLAN.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/TECHNICAL_PLAN.md)** for a complete step-by-step breakdown of the database schemas, API lifecycles, React Context state flow, and mathematics.
+- **[BEGINNER_GUIDE.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/BEGINNER_GUIDE.md)**: 👶 **Start Here!** A complete, baby-step explanation of every file (`.gitignore`, `package.json`, `.env.example`), technology, how MongoDB and React work, and every single API endpoint step-by-step.
+- **[TECHNICAL_PLAN.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/TECHNICAL_PLAN.md)**: In-depth engineering architectural specification, relational schemas, sequence diagrams, and mathematical formulation.
