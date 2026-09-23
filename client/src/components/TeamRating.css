@@ -1,0 +1,153 @@
+.team-rating-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  height: fit-content;
+}
+
+.rating-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-card-title {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.rating-card-formation {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.rating-overall-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(0, 230, 118, 0.2));
+  border: 1.5px solid var(--accent-gold);
+}
+
+.overall-value {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--text-2xl);
+  line-height: 1;
+  color: var(--accent-gold);
+}
+
+.overall-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+}
+
+.squad-progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.complete-label {
+  color: var(--accent-green);
+  font-weight: 700;
+}
+
+.progress-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent-blue);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+
+.progress-complete {
+  background: var(--accent-green);
+}
+
+.rating-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  background: rgba(0, 0, 0, 0.2);
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.breakdown-name {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.breakdown-score {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.incomplete-squad-msg {
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.server-verification-box {
+  padding: var(--space-sm);
+  background: var(--accent-green-dim);
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.verification-header {
+  color: var(--accent-green);
+  font-weight: 700;
+}
+
+.verification-details {
+  color: var(--text-secondary);
+}
+
+.verification-error-box {
+  padding: var(--space-sm);
+  background: var(--accent-red-dim);
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+}

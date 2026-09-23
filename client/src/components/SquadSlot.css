@@ -1,0 +1,137 @@
+.squad-slot {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.squad-slot.empty {
+  border: 2px dashed rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.squad-slot.empty:hover {
+  border-color: var(--accent-green);
+  background: rgba(0, 230, 118, 0.15);
+  transform: scale(1.05);
+}
+
+.slot-empty-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.slot-target-label {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.slot-plus-icon {
+  font-size: var(--text-xl);
+  color: var(--accent-green);
+  line-height: 1;
+}
+
+.squad-slot.filled {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1.5px solid var(--accent-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 230, 118, 0.2);
+}
+
+.squad-slot.slot-penalty {
+  border-color: var(--accent-red);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 10px rgba(239, 68, 68, 0.2);
+}
+
+.slot-player-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  text-align: center;
+}
+
+.slot-remove-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-red);
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform var(--transition-fast);
+  z-index: 10;
+}
+
+.slot-remove-btn:hover {
+  transform: scale(1.2);
+}
+
+.slot-ovr-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.slot-ovr-val {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--text-base);
+  color: var(--accent-gold);
+}
+
+.slot-penalty-indicator {
+  font-size: 0.65rem;
+  color: var(--accent-red);
+  font-weight: 700;
+}
+
+.slot-pos-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  margin: 1px 0;
+}
+
+.slot-player-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+}
+
+.slot-oop-pill {
+  position: absolute;
+  bottom: -6px;
+  background: var(--accent-red);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: var(--radius-full);
+}

@@ -1,0 +1,114 @@
+.pitch-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pitch-field {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      #134e27,
+      #134e27 40px,
+      #14562c 40px,
+      #14562c 80px
+    );
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 0 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--space-md) var(--space-sm);
+  overflow: hidden;
+}
+
+/* Pitch Field Lines */
+.pitch-line.pitch-halfway {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.pitch-center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.pitch-center-spot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.pitch-penalty-area-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 220px;
+  height: 90px;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+  border-right: 2px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.pitch-penalty-area-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 220px;
+  height: 90px;
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+  border-right: 2px solid rgba(255, 255, 255, 0.35);
+  border-top: 2px solid rgba(255, 255, 255, 0.35);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Tactical Rows */
+.pitch-tactical-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  padding: 0 var(--space-md);
+}
+
+.row-attack {
+  margin-top: var(--space-sm);
+}
+
+.row-goalkeeper {
+  justify-content: center;
+  margin-bottom: var(--space-xs);
+}
+
+@media (max-width: 600px) {
+  .pitch-field {
+    height: 580px;
+  }
+}

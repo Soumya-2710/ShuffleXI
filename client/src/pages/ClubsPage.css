@@ -1,0 +1,73 @@
+.breadcrumb-nav {
+  margin-bottom: var(--space-md);
+}
+
+.breadcrumb-link {
+  font-size: var(--text-sm);
+  color: var(--accent-green);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: opacity var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.page-header-pre {
+  margin-bottom: var(--space-xs);
+}
+
+.club-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  text-decoration: none;
+}
+
+.club-badge-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-subtle);
+}
+
+.club-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.club-name {
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.club-stadium {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.club-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.view-squad-link {
+  font-size: var(--text-xs);
+  color: var(--accent-green);
+  font-weight: 700;
+}
