@@ -16,6 +16,7 @@ A full-stack football squad-building web application built with the **MERN** sta
   - **Midfield**: 30%
   - **Attack**: 30%
 - **REST API Verification**: Synchronize and verify client-calculated squad ratings against the Express backend calculation endpoint.
+- **Persistent Squad**: Saves your drafted 11 in `localStorage` across page refreshes.
 
 ---
 
@@ -23,7 +24,7 @@ A full-stack football squad-building web application built with the **MERN** sta
 
 ```
 football-game/
-├── client/                 # React + Vite frontend
+├── frontend/               # React + Vite frontend
 │   ├── src/
 │   │   ├── api/            # Axios API client
 │   │   ├── components/     # Navbar, PlayerCard, FormationPitch, SquadSlot, TeamRating, etc.
@@ -33,7 +34,7 @@ football-game/
 │   │   └── index.css       # Global design system & theme tokens
 │   └── vite.config.js      # Vite dev server + proxy to Express
 │
-├── server/                 # Node.js + Express backend
+├── backend/                # Node.js + Express backend
 │   ├── config/             # MongoDB connection (Mongoose)
 │   ├── controllers/        # League, Club, and Player controllers
 │   ├── models/             # Mongoose schemas (League, Club, Player)
@@ -44,6 +45,8 @@ football-game/
 │
 ├── .env.example
 ├── .gitignore
+├── package.json            # Unified scripts for frontend and backend
+├── TECHNICAL_PLAN.md       # Comprehensive architectural and technical specification
 └── README.md
 ```
 
@@ -56,27 +59,34 @@ football-game/
 - [MongoDB](https://www.mongodb.com/) (or Docker)
 
 ### 2. Environment Variables
-Create a `.env` file in `server/` (or copy `.env.example`):
+Create a `.env` file in `backend/` (or copy `.env.example`):
 ```env
 MONGO_URI=mongodb://localhost:27017/football-game
 PORT=5000
 NODE_ENV=development
 ```
 
-### 3. Install & Seed
+### 3. Quick Run via Root Scripts
+From the root directory:
 ```bash
 # Seed the database
-cd server
 npm run seed
 
-# Run the backend (port 5000)
-npm run dev
+# Run backend (port 5000)
+npm run backend
+
+# Run frontend (port 3000)
+npm run frontend
 ```
 
-In a separate terminal:
+Or run individually:
 ```bash
-# Run the frontend (port 3000)
-cd client
+# Backend
+cd backend
+npm run dev
+
+# Frontend
+cd frontend
 npm run dev
 ```
 
@@ -96,3 +106,9 @@ Visit **http://localhost:3000** in your browser.
 | `GET` | `/api/players` | Get players (optional `?club=id&league=id&position=pos`) |
 | `GET` | `/api/players/:id` | Get single player details |
 | `POST` | `/api/squad/rating` | Calculate team rating for 11 player IDs |
+
+---
+
+## 📖 Technical Documentation
+
+For an in-depth breakdown of the system design, how React talks to Node, MongoDB schema relational design, algorithms, and future phases, read **[TECHNICAL_PLAN.md](file:///c:/Users/asus/OneDrive/Desktop/Project/football-game/TECHNICAL_PLAN.md)**.
