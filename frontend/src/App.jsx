@@ -8,6 +8,7 @@ import ClubsPage from './pages/ClubsPage';
 import PlayersPage from './pages/PlayersPage';
 import PlayerDetailPage from './pages/PlayerDetailPage';
 import SquadBuilderPage from './pages/SquadBuilderPage';
+import ShuffleGamePage from './pages/ShuffleGamePage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/clubs/:clubId" element={<PlayersPage />} />
           <Route path="/players/:playerId" element={<PlayerDetailPage />} />
           <Route path="/squad" element={<SquadBuilderPage />} />
+          <Route path="/shuffle" element={<ShuffleGamePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </main>

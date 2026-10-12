@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../api/axiosClient';
 import PlayerCard from '../components/PlayerCard';
+import FCMobileCard from '../components/FCMobileCard';
 import './PlayersPage.css';
 
 const PlayersPage = () => {
@@ -10,6 +11,7 @@ const PlayersPage = () => {
   const [players, setPlayers] = useState([]);
   const [positionFilter, setPositionFilter] = useState('ALL');
   const [sortBy, setSortBy] = useState('overall');
+  const [viewMode, setViewMode] = useState('fc'); // 'fc' or 'grid'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -42,6 +44,7 @@ const PlayersPage = () => {
   // Filter logic
   const filteredPlayers = players.filter((player) => {
     if (positionFilter === 'ALL') return true;
+    if (positionFilter === 'STARTERS') return player.isStarter === true;
     if (positionFilter === 'GK') return player.position === 'GK';
     if (positionFilter === 'DEF') return ['CB', 'LB', 'RB'].includes(player.position);
     if (positionFilter === 'MID') return ['CDM', 'CM', 'CAM'].includes(player.position);
@@ -53,6 +56,13 @@ const PlayersPage = () => {
   const sortedPlayers = [...filteredPlayers].sort((a, b) => {
     return (b[sortBy] || 0) - (a[sortBy] || 0);
   });
+
+  const avgOvr = players.length
+    ? Math.round(players.reduce((sum, p) => sum + (p.overall || 0), 0) / players.length)
+    : 0;
+  const topPlayer = players.length
+    ? [...players].sort((a, b) => b.overall - a.overall)[0]
+    : null;
 
   return (
     <div className="page players-page">
@@ -68,21 +78,57 @@ const PlayersPage = () => {
           )}
         </div>
 
-        <div className="page-header">
-          <div className="club-header-banner">
-            <div>
-              <div className="page-header-pre">
-                <span className="badge badge-green">
-                  {club?.league?.name || 'League'}
-                </span>
-                <span className="badge badge-gold" style={{ marginLeft: '6px' }}>
-                  {club?.stadium || 'Home Ground'}
-                </span>
+        <div className="page-header club-page-header">
+          <div className="club-hero-card card">
+            <div className="club-hero-main">
+              {club?.logo ? (
+                <div className="club-hero-logo-box">
+                  <img src={club.logo} alt={club.name} className="club-hero-logo" />
+                </div>
+              ) : null}
+              <div className="club-hero-details">
+                <div className="page-header-pre">
+                  <span className="badge badge-green">
+                    {club?.league?.name || 'League'}
+                  </span>
+                  {club?.stadium && (
+                    <span className="badge badge-gold" style={{ marginLeft: '6px' }}>
+                      🏟️ {club.stadium}
+                    </span>
+                  )}
+                  {club?.manager && (
+                    <span className="badge badge-blue" style={{ marginLeft: '6px' }}>
+                      👔 {club.manager}
+                    </span>
+                  )}
+                  {club?.founded && (
+                    <span className="badge badge-purple" style={{ marginLeft: '6px' }}>
+                      🏛️ Est. {club.founded}
+                    </span>
+                  )}
+                </div>
+                <h1 className="page-title club-hero-title">{club?.name || 'Club Roster'}</h1>
+                <p className="page-subtitle">
+                  Official 2026/27 roster with kit numbers, EA FC ratings, and scout additions.
+                </p>
               </div>
-              <h1 className="page-title">{club?.name || 'Club Roster'}</h1>
-              <p className="page-subtitle">
-                Inspect player attributes and click <strong>+ Add</strong> to draft players into your squad.
-              </p>
+            </div>
+
+            <div className="club-hero-stats">
+              <div className="club-stat-box">
+                <span className="club-stat-val">{players.length}</span>
+                <span className="club-stat-lbl">Squad</span>
+              </div>
+              <div className="club-stat-box">
+                <span className="club-stat-val text-gold">{avgOvr}</span>
+                <span className="club-stat-lbl">Avg OVR</span>
+              </div>
+              {topPlayer && (
+                <div className="club-stat-box">
+                  <span className="club-stat-val text-green">{topPlayer.overall}</span>
+                  <span className="club-stat-lbl">Top: {topPlayer.name.split(' ').pop()}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -90,15 +136,15 @@ const PlayersPage = () => {
         {/* Filter and Sort Toolbar */}
         <div className="roster-toolbar card">
           <div className="filter-group">
-            <span className="toolbar-label">Position:</span>
-            {['ALL', 'GK', 'DEF', 'MID', 'ATK'].map((grp) => (
+            <span className="toolbar-label">Filter:</span>
+            {['ALL', 'STARTERS', 'GK', 'DEF', 'MID', 'ATK'].map((grp) => (
               <button
                 key={grp}
                 type="button"
                 className={`pill-btn ${positionFilter === grp ? 'active' : ''}`}
                 onClick={() => setPositionFilter(grp)}
               >
-                {grp === 'ALL' ? 'All Roles' : grp}
+                {grp === 'ALL' ? 'All Roles' : grp === 'STARTERS' ? '⭐ Starters' : grp}
               </button>
             ))}
           </div>
@@ -119,6 +165,24 @@ const PlayersPage = () => {
               <option value="physical">Physical (PHY)</option>
             </select>
           </div>
+
+          <div className="view-mode-group">
+            <span className="toolbar-label">Card Style:</span>
+            <button
+              type="button"
+              className={`pill-btn fc-mode-pill ${viewMode === 'fc' ? 'active' : ''}`}
+              onClick={() => setViewMode('fc')}
+            >
+              📱 FC Mobile Cards
+            </button>
+            <button
+              type="button"
+              className={`pill-btn ${viewMode === 'grid' ? 'active' : ''}`}
+              onClick={() => setViewMode('grid')}
+            >
+              🎴 Compact Grid
+            </button>
+          </div>
         </div>
 
         {loading ? (
@@ -129,6 +193,12 @@ const PlayersPage = () => {
           <div className="empty-state card">
             <h3>No players found</h3>
             <p>No players match the selected position filter.</p>
+          </div>
+        ) : viewMode === 'fc' ? (
+          <div className="fc-mobile-cards-grid stagger">
+            {sortedPlayers.map((player) => (
+              <FCMobileCard key={player._id} player={player} />
+            ))}
           </div>
         ) : (
           <div className="grid-4 stagger">

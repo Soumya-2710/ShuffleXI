@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "barcelona",
+    "name": "Barcelona",
+    "stadium": "Spotify Camp Nou",
+    "city": "Barcelona",
+    "founded": 1899,
+    "website": "https://www.fcbarcelona.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/barcelona.png"
+  },
+  {
+    "slug": "atletico-madrid",
+    "name": "Atlético Madrid",
+    "stadium": "Riyadh Air Metropolitano",
+    "city": "Madrid",
+    "founded": 1903,
+    "website": "https://www.atleticodemadrid.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/atletico-madrid.png"
+  },
+  {
+    "slug": "real-betis",
+    "name": "Real Betis",
+    "stadium": "La Cartuja de Sevilla",
+    "city": "Seville",
+    "founded": 1907,
+    "website": "https://www.realbetisbalompie.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/real-betis.png"
+  },
+  {
+    "slug": "real-madrid",
+    "name": "Real Madrid",
+    "stadium": "Bernabéu",
+    "city": "Madrid",
+    "founded": 1902,
+    "website": "https://www.realmadrid.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/real-madrid.png"
+  },
+  {
+    "slug": "sevilla",
+    "name": "Sevilla",
+    "stadium": "Ramón Sánchez-Pizjuán",
+    "city": "Seville",
+    "founded": 1905,
+    "website": "https://www.sevillafc.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/sevilla.png"
+  },
+  {
+    "slug": "alaves",
+    "name": "Alavés",
+    "stadium": "Mendizorrotza",
+    "city": "Vitoria-Gasteiz",
+    "founded": null,
+    "website": "",
+    "crestUrl": "https://laligatable.co/assets/crests/alaves.png"
+  },
+  {
+    "slug": "deportivo",
+    "name": "Deportivo",
+    "stadium": "ABANCA-Riazor",
+    "city": "A Coruña",
+    "founded": 1914,
+    "website": "https://www.rcdeportivo.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/deportivo.png"
+  },
+  {
+    "slug": "real-sociedad",
+    "name": "Real Sociedad",
+    "stadium": "Reale Arena",
+    "city": "San Sebastián",
+    "founded": 1909,
+    "website": "https://www.realsociedad.eus/",
+    "crestUrl": "https://laligatable.co/assets/crests/real-sociedad.png"
+  },
+  {
+    "slug": "villarreal",
+    "name": "Villarreal",
+    "stadium": "de la Cerámica",
+    "city": "Villarreal",
+    "founded": 1923,
+    "website": "https://www.villarrealcf.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/villarreal.png"
+  },
+  {
+    "slug": "athletic-club",
+    "name": "Athletic Club",
+    "stadium": "San Mamés",
+    "city": "Bilbao",
+    "founded": 1898,
+    "website": "https://www.athletic-club.eus/",
+    "crestUrl": "https://laligatable.co/assets/crests/athletic-club.png"
+  },
+  {
+    "slug": "getafe",
+    "name": "Getafe",
+    "stadium": "Coliseum",
+    "city": "Getafe",
+    "founded": 1946,
+    "website": "https://www.getafecf.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/getafe.png"
+  },
+  {
+    "slug": "rayo-vallecano",
+    "name": "Rayo Vallecano",
+    "stadium": "Ontime Butarque Campo de Fútbol de Vallecas",
+    "city": "Madrid",
+    "founded": 1924,
+    "website": "https://www.rayovallecano.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/rayo-vallecano.png"
+  },
+  {
+    "slug": "osasuna",
+    "name": "Osasuna",
+    "stadium": "El Sadar",
+    "city": "Pamplona",
+    "founded": 1920,
+    "website": "https://www.osasuna.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/osasuna.png"
+  },
+  {
+    "slug": "celta-vigo",
+    "name": "Celta Vigo",
+    "stadium": "ABANCA Balaídos",
+    "city": "Vigo",
+    "founded": 1923,
+    "website": "https://rccelta.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/celta-vigo.png"
+  },
+  {
+    "slug": "espanyol",
+    "name": "Espanyol",
+    "stadium": "Estadi Cornellà-El Prat",
+    "city": "Cornellà de Llobregat",
+    "founded": 1900,
+    "website": "https://www.rcdespanyol.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/espanyol.png"
+  },
+  {
+    "slug": "racing-santander",
+    "name": "Racing Santander",
+    "stadium": "Campos de Sport de El Sardinero",
+    "city": "Santander",
+    "founded": 1913,
+    "website": "https://www.realracingclub.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/racing-santander.png"
+  },
+  {
+    "slug": "levante",
+    "name": "Levante",
+    "stadium": "Estadi Ciutat de València",
+    "city": "Valencia",
+    "founded": 1909,
+    "website": "https://www.levanteud.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/levante.png"
+  },
+  {
+    "slug": "elche",
+    "name": "Elche",
+    "stadium": "Martínez Valero",
+    "city": "Elche",
+    "founded": 1923,
+    "website": "https://www.elchecf.es/",
+    "crestUrl": "https://laligatable.co/assets/crests/elche.png"
+  },
+  {
+    "slug": "valencia",
+    "name": "Valencia",
+    "stadium": "Camp de Mestalla",
+    "city": "Valencia",
+    "founded": 1919,
+    "website": "https://www.valenciacf.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/valencia.png"
+  },
+  {
+    "slug": "malaga",
+    "name": "Málaga",
+    "stadium": "La Rosaleda",
+    "city": "Málaga",
+    "founded": 1904,
+    "website": "https://www.malagacf.com/",
+    "crestUrl": "https://laligatable.co/assets/crests/malaga.png"
+  }
+]

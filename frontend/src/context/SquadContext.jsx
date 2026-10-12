@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer, useCallback, useEffect } from 'react';
+import playerImageMap from '../data/playerImageMap.json';
 
 const SquadContext = createContext();
 
@@ -30,13 +31,43 @@ function getPositionGroup(position) {
   return null;
 }
 
+const hydratePlayer = (p) => {
+  if (!p) return null;
+  const updated = { ...p };
+  if (playerImageMap[p.name]) {
+    updated.image = playerImageMap[p.name].image;
+    if (playerImageMap[p.name].thumbnail) {
+      updated.thumbnail = playerImageMap[p.name].thumbnail;
+    }
+  }
+  if (p.name === 'Rodri') {
+    updated.club = {
+      _id: '6aba4088ee693428eee1430c',
+      name: 'FC Barcelona',
+      logo: 'https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg',
+    };
+    updated.league = {
+      _id: '6aba4088ee693428eee142f3',
+      name: 'La Liga',
+    };
+  }
+  if (p.name === 'Kevin De Bruyne') {
+    updated.club = {
+      _id: '6aba4088ee693428eee14150',
+      name: 'Manchester City',
+      logo: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
+    };
+  }
+  return updated;
+};
+
 const getInitialSlots = () => {
   try {
     const saved = localStorage.getItem('football_game_squad');
     if (saved) {
       const parsed = JSON.parse(saved);
       if (Array.isArray(parsed) && parsed.length === 11) {
-        return parsed;
+        return parsed.map(hydratePlayer);
       }
     }
   } catch (e) {
@@ -71,6 +102,8 @@ function squadReducer(state, action) {
     }
     case 'CLEAR_SQUAD':
       return { ...state, slots: Array(11).fill(null) };
+    case 'SET_SQUAD':
+      return { ...state, slots: action.payload };
     default:
       return state;
   }
@@ -104,6 +137,51 @@ function calculateRating(slots) {
   return { overall, gk, def, mid, atk };
 }
 
+function calculateSquadChemistry(slots) {
+  const filled = slots.filter(Boolean);
+  if (filled.length === 0) return { chemistry: 0, maxChemistry: 33 };
+
+  const clubs = {};
+  const leagues = {};
+  const nations = {};
+
+  filled.forEach((p) => {
+    const club = p.club?.name || p.club?._id || p.club;
+    const league = p.league?.name || p.league?._id || p.league;
+    const nation = p.nationality;
+
+    if (club) clubs[club] = (clubs[club] || 0) + 1;
+    if (league) leagues[league] = (leagues[league] || 0) + 1;
+    if (nation) nations[nation] = (nations[nation] || 0) + 1;
+  });
+
+  let totalChem = 0;
+  filled.forEach((p) => {
+    const club = p.club?.name || p.club?._id || p.club;
+    const league = p.league?.name || p.league?._id || p.league;
+    const nation = p.nationality;
+
+    let c = 0;
+    if (clubs[club] >= 7) c += 3;
+    else if (clubs[club] >= 4) c += 2;
+    else if (clubs[club] >= 2) c += 1;
+
+    let l = 0;
+    if (leagues[league] >= 8) l += 3;
+    else if (leagues[league] >= 5) l += 2;
+    else if (leagues[league] >= 3) l += 1;
+
+    let n = 0;
+    if (nations[nation] >= 8) n += 3;
+    else if (nations[nation] >= 5) n += 2;
+    else if (nations[nation] >= 2) n += 1;
+
+    totalChem += Math.min(3, c + l + n);
+  });
+
+  return { chemistry: totalChem, maxChemistry: 33 };
+}
+
 export function SquadProvider({ children }) {
   const [state, dispatch] = useReducer(squadReducer, initialState);
 
@@ -128,12 +206,17 @@ export function SquadProvider({ children }) {
     dispatch({ type: 'CLEAR_SQUAD' });
   }, []);
 
+  const setSquad = useCallback((newSlots) => {
+    dispatch({ type: 'SET_SQUAD', payload: newSlots });
+  }, []);
+
   const isPlayerInSquad = useCallback(
     (playerId) => state.slots.some((p) => p && p._id === playerId),
     [state.slots]
   );
 
   const rating = calculateRating(state.slots);
+  const chemistry = calculateSquadChemistry(state.slots);
   const filledCount = state.slots.filter((s) => s !== null).length;
 
   const value = {
@@ -142,8 +225,10 @@ export function SquadProvider({ children }) {
     addPlayer,
     removePlayer,
     clearSquad,
+    setSquad,
     isPlayerInSquad,
     rating,
+    chemistry,
     filledCount,
     getPositionGroup,
   };

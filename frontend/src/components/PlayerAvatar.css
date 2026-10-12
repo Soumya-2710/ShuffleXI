@@ -1,0 +1,187 @@
+.player-avatar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Sizing options */
+.player-avatar-wrapper.size-sm {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-md {
+  width: 74px;
+  height: 74px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-lg {
+  width: 110px;
+  height: 110px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-xl {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-reel {
+  width: clamp(75px, 11vh, 96px);
+  height: clamp(75px, 11vh, 96px);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-card {
+  width: 100%;
+  height: 115px;
+  border-radius: var(--radius-md);
+  margin: var(--space-xs) 0;
+  background: radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.25) 100%);
+  overflow: hidden;
+}
+
+.player-avatar-wrapper.size-slot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+/* FC Mobile Pitch Slot Avatar (matches Saliakas rendering) */
+.player-avatar-wrapper.size-fc-slot {
+  width: 86px;
+  height: 82px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.player-composite-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Authentic Transparent Cutout styles (Like Saliakas / EA FC) */
+.player-avatar-img.is-cutout {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.65));
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Authentic FIFA Card Portrait Styles (Matches EA FC Mobile 26) */
+.size-fc-slot .player-avatar-wrapper {
+  width: 100%;
+  height: 90px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.size-fc-slot .player-composite-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+}
+
+.size-fc-slot .player-avatar-img.is-cutout {
+  width: 100%;
+  height: 92px;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.85));
+  transform: translateY(2px);
+}
+
+/* Real Browser Photo / Match Action Photo (Full card bleed, NO circle!) */
+.player-avatar-img.is-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 4px;
+  filter: contrast(1.08) brightness(1.02) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.size-fc-slot .player-avatar-img.is-photo {
+  width: 100%;
+  height: 88px;
+  border-radius: 6px 6px 0 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Clean EA FC Silhouette Fallback (NO fake cartoon shirts) */
+.player-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.08) 0%, rgba(10, 14, 26, 0.6) 100%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.size-fc-slot .player-avatar-fallback {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+}
+
+.fc-silhouette-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-silhouette {
+  width: 55%;
+  height: 55%;
+  opacity: 0.25;
+  color: #94a3b8;
+}
+
+.avatar-initials {
+  position: absolute;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  color: #e2e8f0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}

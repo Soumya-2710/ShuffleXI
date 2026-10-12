@@ -59,36 +59,81 @@ football-game/
 
 ---
 
+---
+
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
-- [Node.js](https://nodejs.org/) (v18+)
-- [MongoDB](https://www.mongodb.com/) (or Docker)
+- [Docker & Docker Compose](https://www.docker.com/) (Recommended for instant, zero-config reproducibility)
+- *OR* [Node.js](https://nodejs.org/) (v18+) and [MongoDB](https://www.mongodb.com/) (v7+) locally
 
-### 2. Run Everything in One Command!
+---
+
+### 🐳 Option A: Run with Docker (Recommended)
+
+Spins up MongoDB, Express backend, and React/Vite frontend with live code reloading across all platforms.
+
 ```bash
-# Navigate to frontend
+# 1. Build and start all containers in the background (or foreground)
+npm run docker:up:build
+# or directly with Docker Compose:
+docker compose up --build
+
+# 2. Seed database with all 5 European leagues & squads (runs once)
+npm run docker:seed
+# or:
+docker compose run --rm backend npm run seed
+```
+
+- **Frontend (Vite + React):** [http://localhost:3000](http://localhost:3000)
+- **Backend API (Express):** [http://localhost:5000](http://localhost:5000)
+- **MongoDB:** `localhost:27017`
+
+#### Useful Docker Commands (Root Directory)
+```bash
+# Start containers in background
+npm run docker:up:d
+
+# View live service logs
+npm run docker:logs
+
+# Stop containers (preserves database data volume)
+npm run docker:down
+
+# Stop containers and reset database volume
+npm run docker:down:v
+
+# Production build test with Nginx & optimized assets
+npm run docker:prod:up
+```
+
+---
+
+### 💻 Option B: Run Locally Without Docker
+
+```bash
+# 1. Navigate to frontend directory
 cd frontend
 
-# Start BOTH Vite frontend and Express backend together
+# 2. Start BOTH Vite frontend and Express backend concurrently
 npm run dev
 ```
 
 - **Frontend:** [http://localhost:3000](http://localhost:3000)
 - **Backend API:** [http://localhost:5000](http://localhost:5000)
 
-### 3. Other Useful Commands (Inside `frontend/`)
+#### Other Useful Local Commands (Inside `frontend/`)
 ```bash
-# Re-seed the database with 48 players
-npm run seed
+# Re-seed local MongoDB database
+npm run seed:all
 
-# Run ONLY the backend
-npm run backend
+# Run ONLY backend
+npm run dev:backend
 
-# Run ONLY the frontend
+# Run ONLY frontend
 npm run dev:frontend
 
-# Build for production
+# Build frontend for production
 npm run build
 ```
 

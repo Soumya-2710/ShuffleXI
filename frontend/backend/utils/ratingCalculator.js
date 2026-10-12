@@ -82,7 +82,6 @@ function calculateTeamRating(squad) {
   const defAvg = avg(groups.DEF);
   const midAvg = avg(groups.MID);
   const atkAvg = avg(groups.ATK);
-
   const overall = Math.round(gkAvg * 0.1 + defAvg * 0.3 + midAvg * 0.3 + atkAvg * 0.3);
 
   return {
@@ -95,4 +94,86 @@ function calculateTeamRating(squad) {
   };
 }
 
-module.exports = { calculateTeamRating, FORMATION_433, getPositionGroup };
+/**
+ * Calculate authentic EA FC 24/25 style squad chemistry (0 to 33 points).
+ * Each of 11 players can earn up to 3 chemistry points based on:
+ * - Same Club: 2 players = +1 pt, 4 players = +2 pts, 7 players = +3 pts
+ * - Same League: 3 players = +1 pt, 5 players = +2 pts, 8 players = +3 pts
+ * - Same Nationality: 2 players = +1 pt, 5 players = +2 pts, 8 players = +3 pts
+ */
+function calculateSquadChemistry(squad) {
+  if (!squad || !Array.isArray(squad)) {
+    return { chemistry: 0, maxChemistry: 33, details: [] };
+  }
+
+  const validPlayers = squad
+    .map((s, idx) => (s?.player ? { ...s.player, slotIndex: s.slotIndex ?? idx } : s ? { ...s, slotIndex: s.slotIndex ?? idx } : null))
+    .filter(Boolean);
+
+  if (validPlayers.length === 0) {
+    return { chemistry: 0, maxChemistry: 33, details: [] };
+  }
+
+  // Count frequencies
+  const clubCounts = {};
+  const leagueCounts = {};
+  const nationCounts = {};
+
+  validPlayers.forEach((p) => {
+    const clubId = p.club?._id?.toString() || p.club?.name || p.club;
+    const leagueId = p.league?._id?.toString() || p.league?.name || p.league;
+    const nation = p.nationality;
+
+    if (clubId) clubCounts[clubId] = (clubCounts[clubId] || 0) + 1;
+    if (leagueId) leagueCounts[leagueId] = (leagueCounts[leagueId] || 0) + 1;
+    if (nation) nationCounts[nation] = (nationCounts[nation] || 0) + 1;
+  });
+
+  // Calculate points per player
+  let totalChemistry = 0;
+  const playerDetails = validPlayers.map((p) => {
+    const clubId = p.club?._id?.toString() || p.club?.name || p.club;
+    const leagueId = p.league?._id?.toString() || p.league?.name || p.league;
+    const nation = p.nationality;
+
+    const clubCount = clubId ? clubCounts[clubId] || 0 : 0;
+    const leagueCount = leagueId ? leagueCounts[leagueId] || 0 : 0;
+    const nationCount = nation ? nationCounts[nation] || 0 : 0;
+
+    let clubPoints = 0;
+    if (clubCount >= 7) clubPoints = 3;
+    else if (clubCount >= 4) clubPoints = 2;
+    else if (clubCount >= 2) clubPoints = 1;
+
+    let leaguePoints = 0;
+    if (leagueCount >= 8) leaguePoints = 3;
+    else if (leagueCount >= 5) leaguePoints = 2;
+    else if (leagueCount >= 3) leaguePoints = 1;
+
+    let nationPoints = 0;
+    if (nationCount >= 8) nationPoints = 3;
+    else if (nationCount >= 5) nationPoints = 2;
+    else if (nationCount >= 2) nationPoints = 1;
+
+    // A player's chemistry is capped at 3
+    const playerChem = Math.min(3, clubPoints + leaguePoints + nationPoints);
+    totalChemistry += playerChem;
+
+    return {
+      playerId: p._id,
+      name: p.name,
+      chemistry: playerChem,
+      clubPoints,
+      leaguePoints,
+      nationPoints,
+    };
+  });
+
+  return {
+    chemistry: totalChemistry,
+    maxChemistry: 33,
+    details: playerDetails,
+  };
+}
+
+module.exports = { calculateTeamRating, calculateSquadChemistry, FORMATION_433, getPositionGroup };

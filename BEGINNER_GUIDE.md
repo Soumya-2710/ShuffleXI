@@ -43,6 +43,11 @@ Welcome! This document was written specifically to explain every single file, fo
 8. [The Complete Journey of a Single Click](#8-the-complete-journey-of-a-single-click)
    - [What happens when you click "Draft into Squad"?](#what-happens-when-you-click-draft-into-squad)
    - [What happens when you click "Verify Rating via API"?](#what-happens-when-you-click-verify-rating-via-api)
+9. [Docker & Containerization: How Everything Runs in a Reproducible Box](#9-docker--containerization-how-everything-runs-in-a-reproducible-box)
+   - [What is Docker and what is a Container?](#what-is-docker-and-what-is-a-container)
+   - [What is a Dockerfile vs docker-compose.yml?](#what-is-a-dockerfile-vs-docker-composeyml)
+   - [How Volumes protect your database and node_modules](#how-volumes-protect-your-database-and-nodemodules)
+10. [Summary Cheatsheet for Quick Reference](#10-summary-cheatsheet-for-quick-reference)
 
 ---
 
@@ -367,16 +372,40 @@ To tie everything you have learned together, let us trace two real-world interac
 
 ---
 
-## 9. Summary Cheatsheet for Quick Reference
+## 9. Docker & Containerization: How Everything Runs in a Reproducible Box
+
+### What is Docker and what is a Container?
+Imagine ordering a meal kit where every single tool, ingredient, and spice comes pre-measured in a magical self-contained box. You do not care whether the stove is gas or electric; the box works exactly the same anywhere in the world.
+
+That is what **Docker** does for software:
+- **Image**: A frozen, read-only snapshot of everything an application needs to run (the Node runtime, exact library versions, configuration).
+- **Container**: A running, isolated instance of an image. It has its own lightweight file system and network port, isolated from your host operating system.
+
+### What is a Dockerfile vs `docker-compose.yml`?
+- **`Dockerfile` (The Recipe)**: Tells Docker how to bake an individual service image step-by-step. In our project:
+  - `frontend/backend/Dockerfile` builds the Express API container.
+  - `frontend/Dockerfile` builds the Vite/React frontend container.
+- **`docker-compose.yml` (The Conductor)**: Connects all the musicians into an orchestra. Instead of launching MongoDB, Express, and Vite in three separate terminal windows, `docker compose up --build` reads `docker-compose.yml`, builds both images, mounts your files, sets up a private internal network (`football-network`), and starts all three services simultaneously.
+
+### How Volumes protect your database and `node_modules`
+1. **Named Volume (`mongodb_data`)**: If you stop or delete a container, files inside the container are deleted by default. Named volumes tell Docker: *"Store the database files on my computer's real disk so my clubs, leagues, and squads are never lost when the container stops."*
+2. **Anonymous Volume (`/app/node_modules`)**: If your host machine is running Windows, your `node_modules` folder has Windows-compiled binaries. Docker containers run Alpine Linux. The anonymous volume `/app/node_modules` ensures the Linux container uses its own Linux-compiled dependencies instead of getting corrupted by host files.
+
+---
+
+## 10. Summary Cheatsheet for Quick Reference
 
 | Term | What it is in simple words |
 | :--- | :--- |
+| **Docker** | The container platform that packages Node, Express, MongoDB, and React into isolated, reproducible boxes. |
+| **Docker Compose** | The single orchestrator tool that spins up the database, API, and frontend together using `npm run docker:up`. |
 | **Vite** | The super-fast development tool that serves your React code on port 3000 and refreshes changes instantly. |
 | **React** | The visual user interface library that draws your components, pitch, cards, and buttons on the screen. |
 | **Express** | The backend server framework running on port 5000 that listens for requests, runs logic, and speaks to the database. |
-| **MongoDB** | The database engine running in Docker on port 27017 that permanently stores your leagues, clubs, and players. |
+| **MongoDB** | The document database engine running on port 27017 that permanently stores your leagues, clubs, and players. |
 | **Mongoose** | The strict rulebook that makes sure data saved into MongoDB has valid types, ratings (1–99), and positions. |
 | **Axios** | The messenger in your React app that sends HTTP requests to your Express backend and brings back data. |
 | **Context API** | The shared cloud storage in your React app that lets any component access the 11 squad players without passing props. |
 | **LocalStorage** | The persistent memory bank inside your browser that prevents your drafted team from disappearing when you refresh. |
-| **Single Command** | Running `cd frontend && npm run dev` runs both Vite and Express together using `concurrently`. |
+| **Single Command** | Run `npm run docker:up:build` (Docker) or `cd frontend && npm run dev` (Local). |
+

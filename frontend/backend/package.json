@@ -6,7 +6,14 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "seed": "node seed/seed.js"
+    "seed": "node seed/seed.js",
+    "seed:all": "node seed/seed.js",
+    "seed:pl": "node seed/seedPremierLeague.js",
+    "seed:laliga": "node seed/seedLaliga.js",
+    "seed:seriea": "node seed/seedSerieA.js",
+    "seed:bundesliga": "node seed/seedBundesliga.js",
+    "seed:ligue1": "node seed/seedLigue1.js",
+    "verify:data": "node seed/verifyAllLeagues.js"
   },
   "keywords": [],
   "author": "",

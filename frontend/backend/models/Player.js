@@ -48,6 +48,34 @@ const playerSchema = new mongoose.Schema(
     dribbling: { ...statField },
     defending: { ...statField },
     physical: { ...statField },
+    image: {
+      type: String,
+      default: null,
+    },
+    thumbnail: {
+      type: String,
+      default: null,
+    },
+    imageSource: {
+      type: String,
+      default: null,
+    },
+    number: {
+      type: Number,
+      default: null,
+    },
+    age: {
+      type: Number,
+      default: null,
+    },
+    height: {
+      type: String,
+      default: null,
+    },
+    isStarter: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

@@ -28,21 +28,38 @@
   text-decoration: none;
 }
 
-.logo-icon {
-  font-size: var(--text-2xl);
-  filter: drop-shadow(0 0 8px rgba(0, 230, 118, 0.5));
+.ea-fc-triangle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #00ff87 0%, #00e5ff 100%);
+  color: #06090e;
+  font-size: 13px;
+  font-weight: 900;
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+  box-shadow: 0 0 14px rgba(0, 255, 135, 0.7);
+  transition: transform 0.25s ease;
+}
+
+.navbar-logo:hover .ea-fc-triangle {
+  transform: scale(1.15) rotate(-10deg);
 }
 
 .logo-text {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: var(--text-xl);
-  letter-spacing: 1px;
+  font-family: 'Syne', var(--font-heading), sans-serif;
+  font-weight: 900;
+  font-size: var(--text-lg);
+  letter-spacing: 0.5px;
   color: var(--text-primary);
 }
 
 .logo-accent {
-  color: var(--accent-green);
+  background: linear-gradient(90deg, #00ff87, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
 .v1-badge {

@@ -1,0 +1,700 @@
+/* =========================================================
+   EA SPORTS FC MOBILE ULTIMATE CARD STYLING
+   ========================================================= */
+
+.fc-mobile-card-container {
+  display: inline-block;
+  perspective: 1000px;
+  user-select: none;
+  transition: transform 0.15s ease-out;
+}
+
+.fc-mobile-card-container.size-sm {
+  width: 170px;
+}
+
+.fc-mobile-card-container.size-md {
+  width: 220px;
+}
+
+.fc-mobile-card-container.size-lg {
+  width: 280px;
+}
+
+.fc-mobile-card-container.size-hero {
+  width: 320px;
+}
+
+.fc-mobile-card-container.size-reel {
+  height: clamp(210px, 39vh, 310px);
+  width: auto;
+  aspect-ratio: 1 / 1.52;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fc-mobile-card-container.size-reel .fc-mobile-card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Root with 3D Flip */
+.fc-mobile-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.52;
+  border-radius: 18px 18px 22px 22px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.fc-mobile-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Holographic Glare Layer */
+.fc-card-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 10;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.fc-mobile-card:hover .fc-card-glare {
+  opacity: 0.9;
+}
+
+/* Front & Back Faces */
+.fc-card-front,
+.fc-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* ================= TIERS (TOTY / MASTER GOLD / PLATINUM / SILVER) ================= */
+
+/* TOTY / Prime Icon: Iridescent Emerald Gold Holographic */
+.fc-tier-toty .fc-card-front,
+.fc-tier-toty .fc-card-back {
+  background: radial-gradient(circle at 50% 20%, #0d2818 0%, #05140b 50%, #020805 100%);
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 25px rgba(0, 230, 118, 0.35), 0 12px 35px rgba(0, 0, 0, 0.8);
+}
+.fc-tier-toty::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #00e676, #ffd700, #00b0ff, #ffd700);
+  z-index: -1;
+  opacity: 0.85;
+  filter: blur(2px);
+}
+
+/* Master Gold: Molten 24K Gold & Obsidian */
+.fc-tier-gold .fc-card-front,
+.fc-tier-gold .fc-card-back {
+  background: radial-gradient(circle at 50% 20%, #241c09 0%, #151105 60%, #080602 100%);
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+.fc-tier-gold::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #ffd700, #ff9100, #ffd700);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Platinum Elite: Ice Silver & Sapphire */
+.fc-tier-platinum .fc-card-front,
+.fc-tier-platinum .fc-card-back {
+  background: radial-gradient(circle at 50% 20%, #122137 0%, #0a1320 60%, #04080e 100%);
+  border: 2px solid #00b0ff;
+  box-shadow: 0 0 18px rgba(0, 176, 255, 0.25), 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+.fc-tier-platinum::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #90caf9, #00b0ff, #e1f5fe);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Silver Core: Titanium Carbon */
+.fc-tier-silver .fc-card-front,
+.fc-tier-silver .fc-card-back {
+  background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 60%, #020617 100%);
+  border: 1.5px solid #94a3b8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.75);
+}
+
+/* ================= CARD HEADER ================= */
+.fc-header-pill {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 14px 4px;
+  z-index: 5;
+}
+
+.fc-ovr-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.fc-ovr-number {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 215, 0, 0.5);
+}
+
+.fc-pos-badge {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+.fc-pos-gk { background: #eab308; color: #000; box-shadow: 0 0 8px rgba(234, 179, 8, 0.6); }
+.fc-pos-def { background: #3b82f6; color: #fff; box-shadow: 0 0 8px rgba(59, 130, 246, 0.6); }
+.fc-pos-mid { background: #a855f7; color: #fff; box-shadow: 0 0 8px rgba(168, 85, 247, 0.6); }
+.fc-pos-atk { background: #ef4444; color: #fff; box-shadow: 0 0 8px rgba(239, 68, 68, 0.6); }
+
+.fc-meta-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.fc-squad-number {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #ffd700;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.fc-club-crest {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+}
+
+.fc-nation-code {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  letter-spacing: 0.5px;
+}
+
+/* ================= HERO AVATAR ZONE ================= */
+.fc-hero-avatar-zone {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px 0 0;
+  z-index: 4;
+}
+
+.fc-avatar-vignette {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* ================= NAMEPLATE ================= */
+.fc-nameplate {
+  position: relative;
+  z-index: 6;
+  margin: 0 10px;
+  background: linear-gradient(180deg, rgba(20, 24, 38, 0.95) 0%, rgba(10, 12, 20, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 6px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.fc-surname {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 900;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.fc-fullname {
+  display: block;
+  font-size: 0.65rem;
+  color: #94a3b8;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc-club-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 3px;
+}
+
+.fc-club-title {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #ffd700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc-age-pill {
+  font-size: 0.6rem;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* ================= 6-ATTRIBUTE STRIP ================= */
+.fc-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  padding: 8px 10px 6px;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.45);
+  margin: 6px 10px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.fc-stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fc-stat-lbl {
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.fc-stat-val {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.fc-stat-val.val-high {
+  color: #00e676;
+  text-shadow: 0 0 6px rgba(0, 230, 118, 0.6);
+}
+
+/* ================= FOOTER / STARS ================= */
+.fc-footer-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 14px 6px;
+  z-index: 6;
+}
+
+.fc-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.fc-star {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.fc-star.active {
+  color: #ffd700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.6);
+}
+
+.fc-flip-prompt {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.fc-flip-prompt:hover {
+  color: #ffd700;
+}
+
+/* ================= ACTIONS ================= */
+.fc-card-actions {
+  display: flex;
+  gap: 6px;
+  padding: 0 10px 10px;
+  z-index: 6;
+}
+
+.fc-btn {
+  flex: 1;
+  padding: 6px 8px;
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.fc-btn-draft, .fc-btn-select {
+  background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
+  color: #000;
+  box-shadow: 0 2px 8px rgba(0, 230, 118, 0.35);
+}
+
+.fc-btn-draft:hover, .fc-btn-select:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 230, 118, 0.55);
+}
+
+.fc-btn-stats {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fc-btn-stats:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.fc-btn-disabled {
+  background: rgba(255, 255, 255, 0.08);
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* ================= CARD BACK ================= */
+.fc-card-back {
+  transform: rotateY(180deg);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fc-back-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 8px;
+}
+
+.fc-back-title {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #fff;
+  margin: 0;
+}
+
+.fc-back-ovr {
+  font-family: var(--font-heading, sans-serif);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #ffd700;
+}
+
+.fc-back-bio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.fc-bio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-bio-k {
+  font-size: 0.58rem;
+  color: #94a3b8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fc-bio-v {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.fc-back-stats-radar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 6px 0;
+}
+
+.fc-radar-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.65rem;
+}
+
+.fc-r-label {
+  width: 52px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.fc-r-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.fc-r-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd700, #00e676);
+  border-radius: 3px;
+}
+
+.fc-r-num {
+  width: 22px;
+  text-align: right;
+  font-weight: 800;
+  color: #fff;
+}
+
+.fc-btn-flip-back {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: auto;
+}
+
+.fc-btn-flip-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* =========================================================
+   SIZE-REEL COMPACT TUNING (Fits Prediction Reel Single-Page)
+   ========================================================= */
+.size-reel .fc-header-pill {
+  padding: 6px 10px 2px;
+}
+
+.size-reel .fc-ovr-number {
+  font-size: 1.45rem;
+  letter-spacing: -0.5px;
+}
+
+.size-reel .fc-pos-badge {
+  font-size: 0.62rem;
+  padding: 1px 5px;
+  margin-top: 2px;
+}
+
+.size-reel .fc-meta-icons {
+  gap: 3px;
+}
+
+.size-reel .fc-squad-number {
+  font-size: 0.65rem;
+  padding: 1px 4px;
+}
+
+.size-reel .fc-club-crest {
+  width: 20px;
+  height: 20px;
+}
+
+.size-reel .fc-nation-code {
+  font-size: 0.58rem;
+}
+
+.size-reel .fc-hero-avatar-zone {
+  margin: -6px 0 0;
+  flex: 1;
+  min-height: 0;
+}
+
+.size-reel .fc-avatar-vignette {
+  height: 28px;
+}
+
+.size-reel .fc-nameplate {
+  margin: 0 8px;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+.size-reel .fc-surname {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.size-reel .fc-fullname {
+  font-size: 0.55rem;
+}
+
+.size-reel .fc-club-banner {
+  margin-top: 2px;
+  padding-top: 2px;
+  gap: 4px;
+}
+
+.size-reel .fc-club-title {
+  font-size: 0.6rem;
+}
+
+.size-reel .fc-age-pill {
+  font-size: 0.52rem;
+  padding: 0 3px;
+}
+
+.size-reel .fc-stats-strip {
+  margin: 3px 8px 0;
+  padding: 4px 6px 3px;
+  gap: 1px;
+}
+
+.size-reel .fc-stat-lbl {
+  font-size: 0.5rem;
+}
+
+.size-reel .fc-stat-val {
+  font-size: 0.72rem;
+}
+
+.size-reel .fc-footer-strip {
+  padding: 2px 10px 3px;
+}
+
+.size-reel .fc-stars {
+  gap: 0;
+}
+
+.size-reel .fc-star {
+  font-size: 0.65rem;
+}
+
+.size-reel .fc-flip-prompt {
+  font-size: 0.52rem;
+}
+
+.size-reel .fc-card-back {
+  padding: 8px 10px;
+}
+
+.size-reel .fc-back-title {
+  font-size: 0.8rem;
+}
+
+.size-reel .fc-back-ovr {
+  font-size: 0.75rem;
+}
+
+.size-reel .fc-back-bio-grid {
+  margin: 4px 0;
+  padding: 4px 6px;
+  gap: 3px 6px;
+}
+
+.size-reel .fc-bio-k {
+  font-size: 0.5rem;
+}
+
+.size-reel .fc-bio-v {
+  font-size: 0.65rem;
+}
+
+.size-reel .fc-back-stats-radar {
+  margin: 4px 0;
+  gap: 3px;
+}
+
+.size-reel .fc-radar-bar {
+  font-size: 0.55rem;
+  gap: 5px;
+}
+
+.size-reel .fc-r-label {
+  width: 44px;
+}
+
+.size-reel .fc-r-track {
+  height: 4px;
+}
+
+.size-reel .fc-btn-flip-back {
+  padding: 3px 8px;
+  font-size: 0.65rem;
+}
+

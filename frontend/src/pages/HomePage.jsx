@@ -34,25 +34,31 @@ const HomePage = () => {
         {/* Hero Section */}
         <section className="hero-section fade-in">
           <div className="hero-badge badge badge-green">
-            ⚡ Version 1 — Squad Builder & Core Engine
+            ⚡ EA SPORTS FC 26 — 2026/27 SEASON EDITION
           </div>
           <h1 className="hero-title">
             BUILD YOUR ULTIMATE <br />
-            <span className="hero-gradient-text">FOOTBALL SQUAD</span>
+            <span className="hero-gradient-text">EA SPORTS FC 26 SQUAD</span>
           </h1>
           <p className="hero-description">
-            Browse world-class leagues, inspect real player statistics, construct your dream 11 in a 4-3-3 tactical system, and watch your team rating calculate with position-fit accuracy.
+            Experience authentic FC 26 Ultimate Team squads, transparent player headshots, real 2026/27 rosters across 5 major leagues, and high-stakes Squad Shuffle Roulette.
           </p>
 
           <div className="hero-cta-group">
-            <Link to="/squad" className="btn btn-primary hero-btn">
-              <span>⚽ Open Squad Builder</span>
+            <Link to="/shuffle" className="btn btn-primary hero-btn" style={{ background: 'linear-gradient(135deg, #00e676 0%, #00b0ff 100%)', color: '#050b14', fontWeight: 800 }}>
+              <span>🎰 Play Squad Shuffle Roulette</span>
               <span className="badge badge-gold" style={{ color: '#000' }}>
+                NEW ARCADE
+              </span>
+            </Link>
+            <Link to="/squad" className="btn btn-secondary hero-btn">
+              <span>⚽ Squad Builder</span>
+              <span className="badge badge-green">
                 {filledCount}/11 Ready
               </span>
             </Link>
             <Link to="/leagues" className="btn btn-secondary hero-btn">
-              <span>🏆 Browse Leagues & Clubs</span>
+              <span>🏆 Browse Leagues</span>
             </Link>
           </div>
 
@@ -68,19 +74,26 @@ const HomePage = () => {
             </div>
             <div className="hero-stat-card card">
               <span className="stat-number">{stats.players}</span>
-              <span className="stat-name">Unique Players</span>
+              <span className="stat-name">Real Players</span>
             </div>
             <div className="hero-stat-card card">
-              <span className="stat-number">4-3-3</span>
-              <span className="stat-name">Tactical Formation</span>
+              <span className="stat-number">🎰</span>
+              <span className="stat-name">Shuffle Roulette</span>
             </div>
           </div>
         </section>
 
         {/* Feature Highlights */}
         <section className="features-section">
-          <h2 className="section-title">Engine Features in Version 1</h2>
+          <h2 className="section-title">Engine Features & Game Modes</h2>
           <div className="grid-3 stagger">
+            <div className="feature-card card" style={{ border: '1px solid rgba(0, 230, 118, 0.4)', background: 'linear-gradient(180deg, rgba(0, 230, 118, 0.08) 0%, rgba(10, 14, 26, 0.6) 100%)' }}>
+              <div className="feature-icon">🎰</div>
+              <h3 className="feature-heading">Squad Shuffle Roulette</h3>
+              <p className="feature-body">
+                Fast-paced roulette game: spin through candidate cards, manage limited rerolls, lock slots, and maximize squad chemistry (0 to 33) across 5 major leagues.
+              </p>
+            </div>
             <div className="feature-card card">
               <div className="feature-icon">🔍</div>
               <h3 className="feature-heading">League & Club Directory</h3>

@@ -4,7 +4,7 @@ import { useSquad } from '../context/SquadContext';
 import './TeamRating.css';
 
 const TeamRating = () => {
-  const { slots, rating, filledCount, clearSquad } = useSquad();
+  const { slots, rating, chemistry, filledCount, clearSquad } = useSquad();
   const [serverVerification, setServerVerification] = useState(null);
   const [isVerifying, setIsVerifying] = useState(false);
   const [verifyError, setVerifyError] = useState(null);
@@ -40,12 +40,18 @@ const TeamRating = () => {
     <div className="team-rating-card card">
       <div className="rating-card-header">
         <div>
-          <h3 className="rating-card-title">Team Rating</h3>
-          <span className="rating-card-formation">Formation: 4-3-3</span>
+          <h3 className="rating-card-title">EA FC 26 Squad</h3>
+          <span className="rating-card-formation">Tactical: 4-3-3 Attack</span>
         </div>
-        <div className="rating-overall-badge">
-          <span className="overall-value">{rating ? rating.overall : '--'}</span>
-          <span className="overall-label">OVR</span>
+        <div className="rating-badges-cluster">
+          <div className="rating-overall-badge">
+            <span className="overall-value">{rating ? rating.overall : '--'}</span>
+            <span className="overall-label">OVR</span>
+          </div>
+          <div className="rating-chem-badge">
+            <span className="chem-value">{chemistry?.chemistry || 0}</span>
+            <span className="chem-label">CHEM</span>
+          </div>
         </div>
       </div>
 

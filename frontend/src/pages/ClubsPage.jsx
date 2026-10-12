@@ -83,7 +83,20 @@ const ClubsPage = () => {
                 to={`/clubs/${club._id}`}
                 className="club-card card"
               >
-                <div className="club-badge-icon">🛡️</div>
+                <div className="club-badge-icon">
+                  {club.logo ? (
+                    <img
+                      src={club.logo}
+                      alt={club.name}
+                      className="club-crest-img"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling && (e.target.nextSibling.style.display = 'inline');
+                      }}
+                    />
+                  ) : null}
+                  <span style={{ display: club.logo ? 'none' : 'inline' }}>🛡️</span>
+                </div>
                 <div className="club-info">
                   <h3 className="club-name">{club.name}</h3>
                   <p className="club-stadium">🏟️ {club.stadium || 'Home Stadium'}</p>

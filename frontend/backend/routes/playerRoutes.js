@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { getPlayers, getPlayerById } = require('../controllers/playerController');
+const { getPlayers, getPlayerById, getShuffleCandidates } = require('../controllers/playerController');
 
+router.get('/shuffle-candidates', getShuffleCandidates);
 router.get('/', getPlayers);
 router.get('/:id', getPlayerById);
 

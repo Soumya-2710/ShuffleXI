@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api from '../api/axiosClient';
 import RatingBar from '../components/RatingBar';
+import PlayerAvatar from '../components/PlayerAvatar';
+import FCMobileCard from '../components/FCMobileCard';
 import { useSquad } from '../context/SquadContext';
 import './PlayerDetailPage.css';
 
@@ -80,22 +82,38 @@ const PlayerDetailPage = () => {
         </div>
 
         <div className="detail-layout">
-          {/* Left Column: Player Spotlight Card */}
+          {/* Left Column: FC Mobile Hero Card Spotlight */}
           <div className="spotlight-card card">
-            <div className="spotlight-top">
-              <span className="badge badge-gold">{player.nationality}</span>
-              <span className="badge badge-blue">{player.position}</span>
+            <div className="spotlight-fc-header">
+              <span className="fc-spotlight-badge">⚡ FC MOBILE ULTIMATE EDITION</span>
             </div>
 
-            <div className="spotlight-ovr-circle">
-              <span className="spotlight-ovr-number">{player.overall}</span>
-              <span className="spotlight-ovr-label">OVERALL</span>
-            </div>
+            <FCMobileCard player={player} size="hero" showActions={false} interactive={true} />
 
-            <h2 className="spotlight-name">{player.name}</h2>
-            <p className="spotlight-meta">
-              {player.club?.name} • {player.league?.name}
-            </p>
+            <div className="spotlight-bio-facts">
+              {player.number && (
+                <div className="bio-fact-item">
+                  <span className="bio-fact-label">Shirt</span>
+                  <span className="bio-fact-val">#{player.number}</span>
+                </div>
+              )}
+              {player.age && (
+                <div className="bio-fact-item">
+                  <span className="bio-fact-label">Age</span>
+                  <span className="bio-fact-val">{player.age} yrs</span>
+                </div>
+              )}
+              {player.height && (
+                <div className="bio-fact-item">
+                  <span className="bio-fact-label">Height</span>
+                  <span className="bio-fact-val">{player.height}</span>
+                </div>
+              )}
+              <div className="bio-fact-item">
+                <span className="bio-fact-label">Role</span>
+                <span className="bio-fact-val">{player.isStarter ? '⭐ Starter' : 'Sub'}</span>
+              </div>
+            </div>
 
             <div className="spotlight-actions">
               <button

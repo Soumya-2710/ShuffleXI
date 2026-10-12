@@ -21,6 +21,18 @@ const clubSchema = new mongoose.Schema(
       type: String,
       default: '',
     },
+    manager: {
+      type: String,
+      default: '',
+    },
+    founded: {
+      type: Number,
+      default: null,
+    },
+    shortName: {
+      type: String,
+      default: '',
+    },
   },
   {
     timestamps: true,

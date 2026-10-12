@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Rodri",
+    "overall": 91,
+    "position": "CDM",
+    "nationality": "Spain",
+    "image": "/players/rodri.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Marc-André ter Stegen",
+    "overall": 89,
+    "position": "GK",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/9w51mf1775286949.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Robert Lewandowski",
+    "overall": 88,
+    "position": "ST",
+    "nationality": "Poland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/vtrddu1785612817.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Frenkie de Jong",
+    "overall": 87,
+    "position": "CM",
+    "nationality": "Netherlands",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Ronald Araújo",
+    "overall": 86,
+    "position": "CB",
+    "nationality": "Uruguay",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/zxp72a1788550464.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Raphinha",
+    "overall": 86,
+    "position": "LW",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/w94spe1726510018.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Lamine Yamal",
+    "overall": 86,
+    "position": "RW",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/m9n4ja1761512633.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Pedri",
+    "overall": 86,
+    "position": "CM",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/82xtuu1726509836.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Jules Koundé",
+    "overall": 85,
+    "position": "RB",
+    "nationality": "France",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Jules_Kounde_France_v_Senegal_16_June_2026-449_%28cropped%29.jpg/330px-Jules_Kounde_France_v_Senegal_16_June_2026-449_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Dani Olmo",
+    "overall": 85,
+    "position": "CAM",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/s9hzoh1725611346.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Wojciech Szczęsny",
+    "overall": 84,
+    "position": "GK",
+    "nationality": "Poland",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Wojciech_Szcz%C4%99sny.png/330px-Wojciech_Szcz%C4%99sny.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Andreas Christensen",
+    "overall": 83,
+    "position": "CB",
+    "nationality": "Denmark",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Andreas_Christensen_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Gavi",
+    "overall": 83,
+    "position": "CM",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/amm91q1726510077.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Iñigo Martínez",
+    "overall": 82,
+    "position": "CB",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/mo68fx1726509870.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Marc Casadó",
+    "overall": 81,
+    "position": "CDM",
+    "nationality": "Spain",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Marc_Casad%C3%B3%2C_durant_la_gira_de_pretemporada_a_EUA._%2805-08-2024%29_%28cropped%29.jpg/330px-Marc_Casad%C3%B3%2C_durant_la_gira_de_pretemporada_a_EUA._%2805-08-2024%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Alejandro Balde",
+    "overall": 81,
+    "position": "LB",
+    "nationality": "Spain",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Esapana-inglaterra-74_%2848899354493%29.jpg/330px-Esapana-inglaterra-74_%2848899354493%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Fermín López",
+    "overall": 80,
+    "position": "CAM",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/4skahz1761512602.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Pau Cubarsí",
+    "overall": 80,
+    "position": "CB",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tynei31768321729.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Ferran Torres",
+    "overall": 80,
+    "position": "ST",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/feey201726510461.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Ansu Fati",
+    "overall": 77,
+    "position": "LW",
+    "nationality": "Spain",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4%D0%B0_2021_%D1%80%D0%BE%D0%BA%D1%83_%E2%80%94_1289339_%28cropped%29.jpg/330px-%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%C2%BB_0-1._2_%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4%D0%B0_2021_%D1%80%D0%BE%D0%BA%D1%83_%E2%80%94_1289339_%28cropped%29.jpg",
+    "imageSource": "wikipedia"
+  },
+  {
+    "name": "Iñaki Peña",
+    "overall": 77,
+    "position": "GK",
+    "nationality": "Spain",
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "name": "Marc Bernal",
+    "overall": 75,
+    "position": "CDM",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/wm6np51768321476.png",
+    "imageSource": "thesportsdb"
+  },
+  {
+    "name": "Pau Víctor",
+    "overall": 75,
+    "position": "ST",
+    "nationality": "Spain",
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "name": "Héctor Fort",
+    "overall": 74,
+    "position": "RB",
+    "nationality": "Spain",
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "name": "Gerard Martín",
+    "overall": 73,
+    "position": "LB",
+    "nationality": "Spain",
+    "image": null,
+    "imageSource": null
+  }
+]

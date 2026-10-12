@@ -1,0 +1,876 @@
+[
+  {
+    "player": "Rodri",
+    "club": "FC Barcelona",
+    "overall": 91,
+    "currentImg": "/players/rodri.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Kylian Mbappé",
+    "club": "Real Madrid",
+    "overall": 91,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/cxrmkm1788114306.png",
+    "bestMatch": {
+      "name": "Kylian Mbappé",
+      "team": "Real Madrid",
+      "nat": "France",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/cxrmkm1788114306.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Erling Haaland",
+    "club": "Manchester City",
+    "overall": 91,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/e8cart1789115621.png",
+    "bestMatch": {
+      "name": "Erling Haaland",
+      "team": "Manchester City",
+      "nat": "Norway",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/e8cart1789115621.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Jude Bellingham",
+    "club": "Real Madrid",
+    "overall": 90,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/7idg7x1788113677.png",
+    "bestMatch": {
+      "name": "Jude Bellingham",
+      "team": "Real Madrid",
+      "nat": "England",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/7idg7x1788113677.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Vinícius Júnior",
+    "club": "Real Madrid",
+    "overall": 90,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/z5o9zt1788114155.png",
+    "bestMatch": {
+      "name": "Vinícius Júnior",
+      "team": "Real Madrid",
+      "nat": "Brazil",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/z5o9zt1788114155.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Harry Kane",
+    "club": "FC Bayern München",
+    "overall": 90,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895.png",
+    "bestMatch": {
+      "name": "Harry Kane",
+      "team": "Bayern Munich",
+      "nat": "England",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Kevin De Bruyne",
+    "club": "Manchester City",
+    "overall": 90,
+    "currentImg": "/players/kevin_de_bruyne.png",
+    "bestMatch": {
+      "name": "Kevin De Bruyne",
+      "team": "Napoli",
+      "nat": "Belgium",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/o4flia1764089447.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Marc-André ter Stegen",
+    "club": "FC Barcelona",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/9w51mf1775286949.png",
+    "bestMatch": {
+      "name": "Marc-André ter Stegen",
+      "team": "Ajax",
+      "nat": "Germany",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/9w51mf1775286949.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Mohamed Salah",
+    "club": "Liverpool",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/3blc581757088735.png",
+    "bestMatch": {
+      "name": "Mohamed Salah",
+      "team": "Trabzonspor",
+      "nat": "Egypt",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/3blc581757088735.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Gianluigi Donnarumma",
+    "club": "Paris Saint-Germain",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/f5rne61789053799.png",
+    "bestMatch": {
+      "name": "Gianluigi Donnarumma",
+      "team": "Manchester City",
+      "nat": "Italy",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/f5rne61789053799.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Virgil van Dijk",
+    "club": "Liverpool",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/0yunf31788550981.png",
+    "bestMatch": {
+      "name": "Virgil van Dijk",
+      "team": "Liverpool",
+      "nat": "The Netherlands",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/0yunf31788550981.png",
+      "score": 18
+    }
+  },
+  {
+    "player": "Alisson Becker",
+    "club": "Liverpool",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/xj6j4o1788592263.png",
+    "bestMatch": {
+      "name": "Alisson Becker",
+      "team": "Liverpool",
+      "nat": "Brazil",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/xj6j4o1788592263.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Florian Wirtz",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/njg95e1788551216.png",
+    "bestMatch": {
+      "name": "Florian Wirtz",
+      "team": "Liverpool",
+      "nat": "Germany",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/njg95e1788551216.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Martin Ødegaard",
+    "club": "Arsenal",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/0dp1xj1788606745.png",
+    "bestMatch": {
+      "name": "Martin Ødegaard",
+      "team": "Arsenal",
+      "nat": "Norway",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/0dp1xj1788606745.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Thibaut Courtois",
+    "club": "Real Madrid",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/w5p8eo1788111831.png",
+    "bestMatch": {
+      "name": "Thibaut Courtois",
+      "team": "Real Madrid",
+      "nat": "Belgium",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/w5p8eo1788111831.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Lautaro Martínez",
+    "club": "Inter Milan",
+    "overall": 89,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/vwxq811759408924.png",
+    "bestMatch": {
+      "name": "Lautaro Martínez",
+      "team": "Inter Milan",
+      "nat": "Argentina",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwxq811759408924.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Jamal Musiala",
+    "club": "FC Bayern München",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/vbkv611756416067.png",
+    "bestMatch": {
+      "name": "Jamal Musiala",
+      "team": "Bayern Munich",
+      "nat": "Germany",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/vbkv611756416067.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Antoine Griezmann",
+    "club": "Atlético de Madrid",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/tiqhh41762288400.png",
+    "bestMatch": {
+      "name": "Antoine Griezmann",
+      "team": "Orlando City",
+      "nat": "France",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/tiqhh41762288400.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Rúben Dias",
+    "club": "Manchester City",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/tmtas31789117560.png",
+    "bestMatch": {
+      "name": "Rúben Dias",
+      "team": "Manchester City",
+      "nat": "Portugal",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/tmtas31789117560.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Robert Lewandowski",
+    "club": "FC Barcelona",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/vtrddu1785612817.png",
+    "bestMatch": {
+      "name": "Robert Lewandowski",
+      "team": "Chicago Fire",
+      "nat": "Poland",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/vtrddu1785612817.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Bukayo Saka",
+    "club": "Arsenal",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/7np7651788606735.png",
+    "bestMatch": {
+      "name": "Bukayo Saka",
+      "team": "Arsenal",
+      "nat": "England",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/7np7651788606735.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Federico Valverde",
+    "club": "Real Madrid",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/6rcajb1788113814.png",
+    "bestMatch": {
+      "name": "Federico Valverde",
+      "team": "Real Madrid",
+      "nat": "Uruguay",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/6rcajb1788113814.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Jan Oblak",
+    "club": "Atlético de Madrid",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/akfmb31762287556.png",
+    "bestMatch": {
+      "name": "Jan Oblak",
+      "team": "Atletico Madrid",
+      "nat": "Slovenia",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/akfmb31762287556.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Antonio Rüdiger",
+    "club": "Real Madrid",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/5asi451788113447.png",
+    "bestMatch": {
+      "name": "Antonio Rüdiger",
+      "team": "Real Madrid",
+      "nat": "Germany",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/5asi451788113447.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Phil Foden",
+    "club": "Manchester City",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/acp1s31789117935.png",
+    "bestMatch": {
+      "name": "Phil Foden",
+      "team": "Manchester City",
+      "nat": "England",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/acp1s31789117935.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Ederson",
+    "club": "Manchester City",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/xhlait1769179027.png",
+    "bestMatch": {
+      "name": "Ederson",
+      "team": "Fenerbahçe",
+      "nat": "Brazil",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/xhlait1769179027.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Bernardo Silva",
+    "club": "Manchester City",
+    "overall": 88,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/zfv07e1788114024.png",
+    "bestMatch": {
+      "name": "Bernardo Silva",
+      "team": "Real Madrid",
+      "nat": "Portugal",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/zfv07e1788114024.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Emiliano Martínez",
+    "club": "Aston Villa",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
+    "bestMatch": {
+      "name": "Emiliano Martinez",
+      "team": "Chelsea",
+      "nat": "Argentina",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
+      "score": 16
+    }
+  },
+  {
+    "player": "Frenkie de Jong",
+    "club": "FC Barcelona",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png",
+    "bestMatch": {
+      "name": "Frenkie de Jong",
+      "team": "Barcelona",
+      "nat": "The Netherlands",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png",
+      "score": 18
+    }
+  },
+  {
+    "player": "Mike Maignan",
+    "club": "AC Milan",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/sw5ukh1758892671.png",
+    "bestMatch": {
+      "name": "Mike Maignan",
+      "team": "AC Milan",
+      "nat": "France",
+      "cutout": "https://r2.thesportsdb.com/images/media/player/cutout/sw5ukh1758892671.png",
+      "score": 22
+    }
+  },
+  {
+    "player": "Bruno Fernandes",
+    "club": "Manchester United",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/utrk0y1789119923.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Joshua Kimmich",
+    "club": "FC Bayern München",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/oqb7rg1756408859.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Gregor Kobel",
+    "club": "Borussia Dortmund",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/vri4zw1756326279.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Alessandro Bastoni",
+    "club": "Inter Milan",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/hwixpa1759408795.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Marquinhos",
+    "club": "Paris Saint-Germain",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/7x9gtl1766335348.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Son Heung-min",
+    "club": "Tottenham Hotspur",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Declan Rice",
+    "club": "Arsenal",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/v1ijg61788607059.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Theo Hernández",
+    "club": "AC Milan",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/4d3g7j1675234242.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Nicolò Barella",
+    "club": "Inter Milan",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/k03sge1759408783.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Yann Sommer",
+    "club": "Inter Milan",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/urnrqp1759408970.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Manuel Neuer",
+    "club": "FC Bayern München",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/udq0so1756416089.png",
+    "bestMatch": null
+  },
+  {
+    "player": "William Saliba",
+    "club": "Arsenal",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/pnctap1788606629.png",
+    "bestMatch": null
+  },
+  {
+    "player": "İlkay Gündoğan",
+    "club": "Manchester City",
+    "overall": 87,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/rhyyig1768854274.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Luka Modrić",
+    "club": "Real Madrid",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Rodrygo",
+    "club": "Real Madrid",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/0l7szu1788114374.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Rafael Leão",
+    "club": "AC Milan",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/tlgrvf1758892567.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Pedri",
+    "club": "FC Barcelona",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/82xtuu1726509836.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Khvicha Kvaratskhelia",
+    "club": "Napoli",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/n4iv5t1766335312.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Ousmane Dembélé",
+    "club": "Paris Saint-Germain",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/pstgy21766335175.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Bruno Guimarães",
+    "club": "Newcastle United",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/trty041786916932.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Paulo Dybala",
+    "club": "AS Roma",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/pjupvq1758815223.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Cole Palmer",
+    "club": "Chelsea",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/q6nnho1787689956.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Ronald Araújo",
+    "club": "FC Barcelona",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/zxp72a1788550464.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Alexander Isak",
+    "club": "Newcastle United",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/x5czue1788551058.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Granit Xhaka",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/knw5ip1789395096.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Alejandro Grimaldo",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/ddeb6b1756316030.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Hakan Çalhanoğlu",
+    "club": "Inter Milan",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Dani Carvajal",
+    "club": "Real Madrid",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/k510z81733653425.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Jonathan Tah",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/y6c2pt1750491272.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Gabriel Magalhães",
+    "club": "Arsenal",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/nvp3jz1788606720.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Alexis Mac Allister",
+    "club": "Liverpool",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/t0d3bt1788551187.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Lamine Yamal",
+    "club": "FC Barcelona",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/m9n4ja1761512633.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Bremer",
+    "club": "Juventus",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/3qx4p71759224866.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Raphinha",
+    "club": "FC Barcelona",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/w94spe1726510018.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Trent Alexander-Arnold",
+    "club": "Liverpool",
+    "overall": 86,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/n056fr1788112698.png",
+    "bestMatch": null
+  },
+  {
+    "player": "David Raya",
+    "club": "Arsenal",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/David_Raya_Argentina_v_Spain_19_July_2026-003_%28cropped%29.jpg/330px-David_Raya_Argentina_v_Spain_19_July_2026-003_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Joško Gvardiol",
+    "club": "Manchester City",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Josko_Gvardiol_Croatia_v_Portugal_2_July_2026-262.jpg/330px-Josko_Gvardiol_Croatia_v_Portugal_2_July_2026-262.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Kim Min-jae",
+    "club": "FC Bayern München",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Jules Koundé",
+    "club": "FC Barcelona",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Jules_Kounde_France_v_Senegal_16_June_2026-449_%28cropped%29.jpg/330px-Jules_Kounde_France_v_Senegal_16_June_2026-449_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Nico Schlotterbeck",
+    "club": "Borussia Dortmund",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93069.jpg/330px-2023-08-12_TSV_Schott_Mainz_gegen_Borussia_Dortmund_%28DFB-Pokal_2023-24%29_by_Sandro_Halank%E2%80%93069.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Dušan Vlahović",
+    "club": "Juventus",
+    "overall": 85,
+    "currentImg": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Du%C5%A1an_Vlahovi%C4%87.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bestMatch": null
+  },
+  {
+    "player": "Eduardo Camavinga",
+    "club": "Real Madrid",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ofrenda_de_la_Liga_y_la_Champions-13-L.Mill%C3%A1n_%2852109790215%29_%28cropped%29.jpg/330px-Ofrenda_de_la_Liga_y_la_Champions-13-L.Mill%C3%A1n_%2852109790215%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Giorgi Mamardashvili",
+    "club": "Valencia CF",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/3yoja81757088527.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Unai Simón",
+    "club": "Athletic Club",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Unai_Simon_Argentina_v_Spain_19_July_2026-078_%28cropped%29.jpg/330px-Unai_Simon_Argentina_v_Spain_19_July_2026-078_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Loïs Openda",
+    "club": "RB Leipzig",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/1chuok1759225712.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Cristian Romero",
+    "club": "Tottenham Hotspur",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cristian_Romero_Argentina_v_Egypt_7_July_2026-108.jpg/330px-Cristian_Romero_Argentina_v_Egypt_7_July_2026-108.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Aurélien Tchouaméni",
+    "club": "Real Madrid",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_%28cropped%29.jpg/330px-Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Luis Díaz",
+    "club": "Liverpool",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/FC_RB_Salzburg_gegen_FC_Bayern_M%C3%BCnchen_%282026-01-06_Testspiel%29_40_%28Luiz_D%C3%ADaz%29.jpg/500px-FC_RB_Salzburg_gegen_FC_Bayern_M%C3%BCnchen_%282026-01-06_Testspiel%29_40_%28Luiz_D%C3%ADaz%29.jpg",
+    "bestMatch": null
+  },
+  {
+    "player": "James Maddison",
+    "club": "Tottenham Hotspur",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/James_Maddison_pre-match_training_%28cropped%29.jpg/330px-James_Maddison_pre-match_training_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Teun Koopmeiners",
+    "club": "Juventus",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/pvqhh01759225850.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Jeremie Frimpong",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Jeremie_Frimpong_04012026_%283%29_%28cropped%29.jpg/330px-Jeremie_Frimpong_04012026_%283%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Federico Dimarco",
+    "club": "Inter Milan",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Norway_Italy_-_June_2025_A_26_%28cropped%29.jpg/330px-Norway_Italy_-_June_2025_A_26_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Éder Militão",
+    "club": "Real Madrid",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/xo4fdb1788112164.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Nico Williams",
+    "club": "Athletic Club",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Nico_Williams_Argentina_v_Spain_19_July_2026-196_%28cropped%29.jpg/330px-Nico_Williams_Argentina_v_Spain_19_July_2026-196_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Vitinha",
+    "club": "Paris Saint-Germain",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Andrew Robertson",
+    "club": "Liverpool",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Andy_Robertson_Scotland_v_Bolivia_6_June_2026-43.jpg/330px-Andy_Robertson_Scotland_v_Bolivia_6_June_2026-43.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "John Stones",
+    "club": "Manchester City",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/John_Stones_England_v_Ghana_23_June_2026-038.jpg/330px-John_Stones_England_v_Ghana_23_June_2026-038.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "João Palhinha",
+    "club": "FC Bayern München",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Joaopalhinha.jpg/330px-Joaopalhinha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Achraf Hakimi",
+    "club": "Paris Saint-Germain",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/oqu69c1766335243.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Julián Alvarez",
+    "club": "Atlético de Madrid",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Alphonso Davies",
+    "club": "FC Bayern München",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Alphonso_Davies_Canada_v_Qatar_18_June_2026-007_%28cropped%29.jpg/330px-Alphonso_Davies_Canada_v_Qatar_18_June_2026-007_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Diogo Jota",
+    "club": "Liverpool",
+    "overall": 85,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Diogo_Jota_2025_Cropped.jpg/330px-Diogo_Jota_2025_Cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Ollie Watkins",
+    "club": "Aston Villa",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/w6dir11756987347.png",
+    "bestMatch": null
+  },
+  {
+    "player": "Dani Olmo",
+    "club": "FC Barcelona",
+    "overall": 85,
+    "currentImg": "https://r2.thesportsdb.com/images/media/player/cutout/s9hzoh1725611346.png",
+    "bestMatch": null
+  },
+  {
+    "player": "David Alaba",
+    "club": "Real Madrid",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_David_Alaba_850_1632.jpg/330px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_David_Alaba_850_1632.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Romelu Lukaku",
+    "club": "Napoli",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Romelu_Lukaku_2021.jpg/330px-Romelu_Lukaku_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Exequiel Palacios",
+    "club": "Bayer 04 Leverkusen",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Exequiel_Palacios_Argentina_v_Spain_19_July_2026-022.jpg/330px-Exequiel_Palacios_Argentina_v_Spain_19_July_2026-022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Martín Zubimendi",
+    "club": "Real Sociedad",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Martin_Zubimendi_Argentina_v_Spain_19_July_2026-012.jpg/330px-Martin_Zubimendi_Argentina_v_Spain_19_July_2026-012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  },
+  {
+    "player": "Casemiro",
+    "club": "Manchester United",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Casemiro_Brazil_V_Morocco_13_June_2026-76_%28cropped%29.jpg/330px-Casemiro_Brazil_V_Morocco_13_June_2026-76_%28cropped%29.jpg",
+    "bestMatch": null
+  },
+  {
+    "player": "Mikel Merino",
+    "club": "Arsenal",
+    "overall": 84,
+    "currentImg": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Mikel_Merino_France_v_Spain_7.24.26-241_%28cropped%29.jpg/330px-Mikel_Merino_France_v_Spain_7.24.26-241_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bestMatch": null
+  }
+]

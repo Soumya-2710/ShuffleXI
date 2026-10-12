@@ -1,0 +1,97 @@
+name: football-game
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: football-mongodb
+    restart: unless-stopped
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGO_DB:-football-game}
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - football-network
+
+  backend:
+    container_name: football-backend
+    build:
+      context: ./frontend/backend
+      dockerfile: Dockerfile
+      target: development
+    restart: unless-stopped
+    ports:
+      - "${BACKEND_PORT:-5000}:5000"
+    environment:
+      NODE_ENV: development
+      PORT: 5000
+      MONGO_URI: mongodb://mongodb:27017/${MONGO_DB:-football-game}
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - ./frontend/backend:/app
+      - /app/node_modules
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - football-network
+
+  frontend:
+    container_name: football-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      BACKEND_URL: http://backend:5000
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/backend
+    depends_on:
+      backend:
+        condition: service_started
+    networks:
+      - football-network
+
+  # On-demand database seeding service
+  # Run via: docker compose run --rm seed
+  # Or: docker compose --profile seed up
+  seed:
+    container_name: football-seed
+    build:
+      context: ./frontend/backend
+      dockerfile: Dockerfile
+      target: development
+    profiles:
+      - seed
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/${MONGO_DB:-football-game}
+    command: ["npm", "run", "seed:all"]
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - football-network
+
+volumes:
+  mongodb_data:
+    name: football_game_mongodb_data
+
+networks:
+  football-network:
+    name: football_game_network
+    driver: bridge

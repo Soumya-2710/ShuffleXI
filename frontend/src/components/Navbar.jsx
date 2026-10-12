@@ -10,11 +10,11 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-icon">⚽</span>
+          <span className="ea-fc-triangle">▼</span>
           <span className="logo-text">
-            FOOTBALL<span className="logo-accent">GAME</span>
+            EA SPORTS <span className="logo-accent">FC 26</span>
           </span>
-          <span className="badge badge-green v1-badge">V1</span>
+          <span className="badge badge-green v1-badge">26/27</span>
         </Link>
 
         <nav className="nav-links">
@@ -30,6 +30,13 @@ const Navbar = () => {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
           >
             Leagues & Clubs
+          </NavLink>
+          <NavLink
+            to="/shuffle"
+            className={({ isActive }) => `nav-link nav-link-shuffle ${isActive ? 'active' : ''}`}
+          >
+            🎰 Shuffle Roulette
+            <span className="badge badge-gold new-badge" style={{ fontSize: '0.65rem', padding: '1px 6px', marginLeft: '4px' }}>NEW</span>
           </NavLink>
           <NavLink
             to="/squad"

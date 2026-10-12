@@ -1,0 +1,1452 @@
+[
+  {
+    "name": "Erling Haaland",
+    "overall": 91,
+    "club": "Manchester City",
+    "nationality": "Norway",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/e8cart1789115621.png",
+    "tsdbPlayer": "Erling Haaland",
+    "tsdbTeam": "Manchester City",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Kylian Mbappé",
+    "overall": 91,
+    "club": "Real Madrid",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/cxrmkm1788114306.png",
+    "tsdbPlayer": "Kylian Mbappé",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Jude Bellingham",
+    "overall": 90,
+    "club": "Real Madrid",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/7idg7x1788113677.png",
+    "tsdbPlayer": "Jude Bellingham",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Vinícius Júnior",
+    "overall": 90,
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/z5o9zt1788114155.png",
+    "tsdbPlayer": "Vinícius Júnior",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Harry Kane",
+    "overall": 90,
+    "club": "FC Bayern München",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895.png",
+    "tsdbPlayer": "Harry Kane",
+    "tsdbTeam": "Bayern Munich",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Martin Ødegaard",
+    "overall": 89,
+    "club": "Arsenal",
+    "nationality": "Norway",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/0dp1xj1788606745.png",
+    "tsdbPlayer": "Martin Ødegaard",
+    "tsdbTeam": "Arsenal",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Lautaro Martínez",
+    "overall": 89,
+    "club": "Inter Milan",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/vwxq811759408924.png",
+    "tsdbPlayer": "Lautaro Martínez",
+    "tsdbTeam": "Inter Milan",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Mohamed Salah",
+    "overall": 89,
+    "club": "Liverpool",
+    "nationality": "Egypt",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/3blc581757088735.png",
+    "tsdbPlayer": "Mohamed Salah",
+    "tsdbTeam": "Trabzonspor",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Virgil van Dijk",
+    "overall": 89,
+    "club": "Liverpool",
+    "nationality": "Netherlands",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/0yunf31788550981.png",
+    "tsdbPlayer": "Virgil van Dijk",
+    "tsdbTeam": "Liverpool",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Alisson Becker",
+    "overall": 89,
+    "club": "Liverpool",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/xj6j4o1788592263.png",
+    "tsdbPlayer": "Alisson Becker",
+    "tsdbTeam": "Liverpool",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Marc-André ter Stegen",
+    "overall": 89,
+    "club": "FC Barcelona",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/9w51mf1775286949.png",
+    "tsdbPlayer": "Marc-André ter Stegen",
+    "tsdbTeam": "Ajax",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Florian Wirtz",
+    "overall": 89,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/njg95e1788551216.png",
+    "tsdbPlayer": "Florian Wirtz",
+    "tsdbTeam": "Liverpool",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Gianluigi Donnarumma",
+    "overall": 89,
+    "club": "Paris Saint-Germain",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/f5rne61789053799.png",
+    "tsdbPlayer": "Gianluigi Donnarumma",
+    "tsdbTeam": "Manchester City",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Thibaut Courtois",
+    "overall": 89,
+    "club": "Real Madrid",
+    "nationality": "Belgium",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/w5p8eo1788111831.png",
+    "tsdbPlayer": "Thibaut Courtois",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Rúben Dias",
+    "overall": 88,
+    "club": "Manchester City",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tmtas31789117560.png",
+    "tsdbPlayer": "Rúben Dias",
+    "tsdbTeam": "Manchester City",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Robert Lewandowski",
+    "overall": 88,
+    "club": "FC Barcelona",
+    "nationality": "Poland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/vtrddu1785612817.png",
+    "tsdbPlayer": "Robert Lewandowski",
+    "tsdbTeam": "Chicago Fire",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Federico Valverde",
+    "overall": 88,
+    "club": "Real Madrid",
+    "nationality": "Uruguay",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/6rcajb1788113814.png",
+    "tsdbPlayer": "Federico Valverde",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Jan Oblak",
+    "overall": 88,
+    "club": "Atlético de Madrid",
+    "nationality": "Slovenia",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/akfmb31762287556.png",
+    "tsdbPlayer": "Jan Oblak",
+    "tsdbTeam": "Atletico Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Antoine Griezmann",
+    "overall": 88,
+    "club": "Atlético de Madrid",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tiqhh41762288400.png",
+    "tsdbPlayer": "Antoine Griezmann",
+    "tsdbTeam": "Orlando City",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Ederson",
+    "overall": 88,
+    "club": "Manchester City",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/xhlait1769179027.png",
+    "tsdbPlayer": "Ederson",
+    "tsdbTeam": "Fenerbahçe",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Antonio Rüdiger",
+    "overall": 88,
+    "club": "Real Madrid",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/5asi451788113447.png",
+    "tsdbPlayer": "Antonio Rüdiger",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Jamal Musiala",
+    "overall": 88,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/vbkv611756416067.png",
+    "tsdbPlayer": "Jamal Musiala",
+    "tsdbTeam": "Bayern Munich",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Bukayo Saka",
+    "overall": 88,
+    "club": "Arsenal",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/7np7651788606735.png",
+    "tsdbPlayer": "Bukayo Saka",
+    "tsdbTeam": "Arsenal",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Phil Foden",
+    "overall": 88,
+    "club": "Manchester City",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/acp1s31789117935.png",
+    "tsdbPlayer": "Phil Foden",
+    "tsdbTeam": "Manchester City",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Bernardo Silva",
+    "overall": 88,
+    "club": "Manchester City",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/zfv07e1788114024.png",
+    "tsdbPlayer": "Bernardo Silva",
+    "tsdbTeam": "Real Madrid",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Nicolò Barella",
+    "overall": 87,
+    "club": "Inter Milan",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/k03sge1759408783.png",
+    "tsdbPlayer": "Nicolo Barella",
+    "tsdbTeam": "Inter Milan",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Mike Maignan",
+    "overall": 87,
+    "club": "AC Milan",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/sw5ukh1758892671.png",
+    "tsdbPlayer": "Mike Maignan",
+    "tsdbTeam": "AC Milan",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Yann Sommer",
+    "overall": 87,
+    "club": "Inter Milan",
+    "nationality": "Switzerland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/urnrqp1759408970.png",
+    "tsdbPlayer": "Yann Sommer",
+    "tsdbTeam": "Club Brugge",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Theo Hernández",
+    "overall": 87,
+    "club": "AC Milan",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/4d3g7j1675234242.png",
+    "tsdbPlayer": "Théo Hernandez",
+    "tsdbTeam": "Al-Hilal",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Manuel Neuer",
+    "overall": 87,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/udq0so1756416089.png",
+    "tsdbPlayer": "Manuel Neuer",
+    "tsdbTeam": "Bayern Munich",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Joshua Kimmich",
+    "overall": 87,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/oqb7rg1756408859.png",
+    "tsdbPlayer": "Joshua Kimmich",
+    "tsdbTeam": "Bayern Munich",
+    "tsdbSport": "Soccer"
+  },
+  {
+    "name": "Frenkie de Jong",
+    "overall": 87,
+    "club": "FC Barcelona",
+    "nationality": "Netherlands",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/b8k6611726510284.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Gregor Kobel",
+    "overall": 87,
+    "club": "Borussia Dortmund",
+    "nationality": "Switzerland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/vri4zw1756326279.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Marquinhos",
+    "overall": 87,
+    "club": "Paris Saint-Germain",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/7x9gtl1766335348.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Alessandro Bastoni",
+    "overall": 87,
+    "club": "Inter Milan",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/hwixpa1759408795.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Bruno Fernandes",
+    "overall": 87,
+    "club": "Manchester United",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/utrk0y1789119923.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Declan Rice",
+    "overall": 87,
+    "club": "Arsenal",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/v1ijg61788607059.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Emiliano Martínez",
+    "overall": 87,
+    "club": "Aston Villa",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "İlkay Gündoğan",
+    "overall": 87,
+    "club": "Manchester City",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/rhyyig1768854274.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Son Heung-min",
+    "overall": 87,
+    "club": "Tottenham Hotspur",
+    "nationality": "South Korea",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "William Saliba",
+    "overall": 87,
+    "club": "Arsenal",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/pnctap1788606629.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Khvicha Kvaratskhelia",
+    "overall": 86,
+    "club": "Napoli",
+    "nationality": "Georgia",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/n4iv5t1766335312.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Jonathan Tah",
+    "overall": 86,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/y6c2pt1750491272.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Lamine Yamal",
+    "overall": 86,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/m9n4ja1761512633.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Raphinha",
+    "overall": 86,
+    "club": "FC Barcelona",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/w94spe1726510018.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Trent Alexander-Arnold",
+    "overall": 86,
+    "club": "Liverpool",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/n056fr1788112698.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Paulo Dybala",
+    "overall": 86,
+    "club": "AS Roma",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/pjupvq1758815223.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Pedri",
+    "overall": 86,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/82xtuu1726509836.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Rafael Leão",
+    "overall": 86,
+    "club": "AC Milan",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tlgrvf1758892567.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Alexis Mac Allister",
+    "overall": 86,
+    "club": "Liverpool",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/t0d3bt1788551187.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Bremer",
+    "overall": 86,
+    "club": "Juventus",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/3qx4p71759224866.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Hakan Çalhanoğlu",
+    "overall": 86,
+    "club": "Inter Milan",
+    "nationality": "Turkey",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Cole Palmer",
+    "overall": 86,
+    "club": "Chelsea",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/q6nnho1787689956.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Rodrygo",
+    "overall": 86,
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/0l7szu1788114374.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Dani Carvajal",
+    "overall": 86,
+    "club": "Real Madrid",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/k510z81733653425.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Ousmane Dembélé",
+    "overall": 86,
+    "club": "Paris Saint-Germain",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/pstgy21766335175.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Luka Modrić",
+    "overall": 86,
+    "club": "Real Madrid",
+    "nationality": "Croatia",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Alexander Isak",
+    "overall": 86,
+    "club": "Newcastle United",
+    "nationality": "Sweden",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/x5czue1788551058.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Bruno Guimarães",
+    "overall": 86,
+    "club": "Newcastle United",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/trty041786916932.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Ronald Araújo",
+    "overall": 86,
+    "club": "FC Barcelona",
+    "nationality": "Uruguay",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/zxp72a1788550464.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Gabriel Magalhães",
+    "overall": 86,
+    "club": "Arsenal",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/nvp3jz1788606720.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Granit Xhaka",
+    "overall": 86,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Switzerland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/knw5ip1789395096.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Alejandro Grimaldo",
+    "overall": 86,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ddeb6b1756316030.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Loïs Openda",
+    "overall": 85,
+    "club": "RB Leipzig",
+    "nationality": "Belgium",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/1chuok1759225712.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Kim Min-jae",
+    "overall": 85,
+    "club": "FC Bayern München",
+    "nationality": "South Korea",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Achraf Hakimi",
+    "overall": 85,
+    "club": "Paris Saint-Germain",
+    "nationality": "Morocco",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/oqu69c1766335243.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Vitinha",
+    "overall": 85,
+    "club": "Paris Saint-Germain",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Teun Koopmeiners",
+    "overall": 85,
+    "club": "Juventus",
+    "nationality": "Netherlands",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/pvqhh01759225850.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Éder Militão",
+    "overall": 85,
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/xo4fdb1788112164.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Ollie Watkins",
+    "overall": 85,
+    "club": "Aston Villa",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/w6dir11756987347.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Dani Olmo",
+    "overall": 85,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/s9hzoh1725611346.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Julián Alvarez",
+    "overall": 85,
+    "club": "Atlético de Madrid",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Giorgi Mamardashvili",
+    "overall": 85,
+    "club": "Valencia CF",
+    "nationality": "Georgia",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/3yoja81757088527.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Nuno Mendes",
+    "overall": 83,
+    "club": "Paris Saint-Germain",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Gavi",
+    "overall": 83,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/amm91q1726510077.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Koke",
+    "overall": 83,
+    "club": "Atlético de Madrid",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/dy8l941762288151.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Iñigo Martínez",
+    "overall": 82,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/mo68fx1726509870.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Leon Goretzka",
+    "overall": 82,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/1wc39s1788605136.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Raheem Sterling",
+    "overall": 82,
+    "club": "Arsenal",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/kza2je1766827614.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Thomas Müller",
+    "overall": 82,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/6iqfos1770542275.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Serge Gnabry",
+    "overall": 82,
+    "club": "FC Bayern München",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/unnt3z1756409086.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Piero Hincapié",
+    "overall": 82,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Ecuador",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/yig4r51788606695.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Marcin Bułka",
+    "overall": 82,
+    "club": "OGC Nice",
+    "nationality": "Poland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/h45mgc1681397422.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Robert Andrich",
+    "overall": 82,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/fw2c8c1756315716.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Aleix García",
+    "overall": 82,
+    "club": "Bayer 04 Leverkusen",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/8abnca1756316053.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Joelinton",
+    "overall": 82,
+    "club": "Newcastle United",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/fwbixl1789128318.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Savinho",
+    "overall": 82,
+    "club": "Manchester City",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/3100367.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Brahim Díaz",
+    "overall": 82,
+    "club": "Real Madrid",
+    "nationality": "Morocco",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/izl76o1788114611.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Bryan Mbeumo",
+    "overall": 82,
+    "club": "Brentford",
+    "nationality": "Cameroon",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ajz1961789120176.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Matheus Cunha",
+    "overall": 82,
+    "club": "Wolverhampton Wanderers",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/i9s5nj1789119955.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Brice Samba",
+    "overall": 82,
+    "club": "RC Lens",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/nkfugp1766137864.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Alexandre Lacazette",
+    "overall": 82,
+    "club": "Olympique Lyonnais",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ftzkut1702910418.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Gabriel Jesus",
+    "overall": 82,
+    "club": "Arsenal",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/jcifyz1789725894.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Leon Bailey",
+    "overall": 82,
+    "club": "Aston Villa",
+    "nationality": "Jamaica",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/nh5qi31788290598.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Davide Frattesi",
+    "overall": 82,
+    "club": "Inter Milan",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/z58bx11759408884.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Piotr Zieliński",
+    "overall": 82,
+    "club": "Inter Milan",
+    "nationality": "Poland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/8wynz41759408193.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "John McGinn",
+    "overall": 82,
+    "club": "Aston Villa",
+    "nationality": "Scotland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/gu319m1788604952.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Mikel Oyarzabal",
+    "overall": 82,
+    "club": "Real Sociedad",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/9apeaz1762709253.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Giovani Lo Celso",
+    "overall": 82,
+    "club": "Real Betis",
+    "nationality": "Argentina",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/yge8gq1762602923.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Dani Parejo",
+    "overall": 82,
+    "club": "Villarreal CF",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/sxc6xa1762889036.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Brais Méndez",
+    "overall": 82,
+    "club": "Real Sociedad",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/v6hbuh1762709173.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Manuel Locatelli",
+    "overall": 82,
+    "club": "Juventus",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/0zlnug1759225148.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Iñaki Williams",
+    "overall": 82,
+    "club": "Athletic Club",
+    "nationality": "Ghana",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/xvxhdg1603578184.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Mattia Zaccagni",
+    "overall": 82,
+    "club": "SS Lazio",
+    "nationality": "Italy",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/zypi1b1698231657.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Oihan Sancet",
+    "overall": 82,
+    "club": "Athletic Club",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/btz7y21723745224.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Youssouf Fofana",
+    "overall": 82,
+    "club": "AC Milan",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/3npg7a1758892447.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Pau Cubarsí",
+    "overall": 80,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tynei31768321729.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Fermín López",
+    "overall": 80,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/4skahz1761512602.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Kobbie Mainoo",
+    "overall": 80,
+    "club": "Manchester United",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/cqc0oh1789120518.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Arda Güler",
+    "overall": 80,
+    "club": "Real Madrid",
+    "nationality": "Turkey",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ye6tv41788113953.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Ferran Torres",
+    "overall": 80,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/feey201726510461.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Francisco Conceição",
+    "overall": 80,
+    "club": "Juventus",
+    "nationality": "Portugal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Leny Yoro",
+    "overall": 79,
+    "club": "Manchester United",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/qy4qlx1789120067.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Endrick",
+    "overall": 79,
+    "club": "Real Madrid",
+    "nationality": "Brazil",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/lhg9vv1788114231.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Florent Mollet",
+    "overall": 76,
+    "club": "FC Nantes",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/5d6dn51681376159.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Matthis Abline",
+    "overall": 76,
+    "club": "FC Nantes",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/dlr6yc1765876800.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Jordan Ferri",
+    "overall": 76,
+    "club": "Montpellier HSC",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/13nq9w1681315455.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Johann Lepenant",
+    "overall": 76,
+    "club": "FC Nantes",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/g934ws1765876365.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Nathan Zézé",
+    "overall": 76,
+    "club": "FC Nantes",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/a4vczz1674746449.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Pierre Ekwah",
+    "overall": 76,
+    "club": "AS Saint-Étienne",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/39fric1727952405.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Charlie Cresswell",
+    "overall": 76,
+    "club": "Toulouse FC",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/qrv2dy1765966992.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Mark McKenzie",
+    "overall": 76,
+    "club": "Toulouse FC",
+    "nationality": "United States",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/2f11kz1765967134.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Cristian Cásseres Jr",
+    "overall": 76,
+    "club": "Toulouse FC",
+    "nationality": "Venezuela",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/tyvgck1765967018.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Joshua King",
+    "overall": 76,
+    "club": "Toulouse FC",
+    "nationality": "Norway",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/z5z0jv1631436354.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Donovan Léon",
+    "overall": 76,
+    "club": "AJ Auxerre",
+    "nationality": "French Guiana",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/qmtrr41765920430.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Gideon Mensah",
+    "overall": 76,
+    "club": "AJ Auxerre",
+    "nationality": "Ghana",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/gvciqz1765920565.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Elisha Owusu",
+    "overall": 76,
+    "club": "AJ Auxerre",
+    "nationality": "Ghana",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/2ypxwb1765920691.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Lassine Sinayoko",
+    "overall": 76,
+    "club": "AJ Auxerre",
+    "nationality": "Mali",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/r5684k1765920768.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Yahia Fofana",
+    "overall": 76,
+    "club": "Angers SCO",
+    "nationality": "Ivory Coast",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/np4wf61765835758.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Neal Maupay",
+    "overall": 76,
+    "club": "Olympique de Marseille",
+    "nationality": "France",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/gn9rkt1766152487.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Jonathan Rowe",
+    "overall": 76,
+    "club": "Olympique de Marseille",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/4m6nhs1758897233.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Ismaël Koné",
+    "overall": 76,
+    "club": "Olympique de Marseille",
+    "nationality": "Canada",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/kiabdn1764106047.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Derek Cornelius",
+    "overall": 76,
+    "club": "Olympique de Marseille",
+    "nationality": "Canada",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/8ifr0w1777017367.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Krépin Diatta",
+    "overall": 76,
+    "club": "AS Monaco",
+    "nationality": "Senegal",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/5uag2g1766238000.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Radosław Majecki",
+    "overall": 76,
+    "club": "AS Monaco",
+    "nationality": "Poland",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/r6awrf1765982795.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Karim Onisiwo",
+    "overall": 76,
+    "club": "1. FSV Mainz 05",
+    "nationality": "Austria",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/x8du2e1769722139.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Hyun-seok Hong",
+    "overall": 76,
+    "club": "1. FSV Mainz 05",
+    "nationality": "South Korea",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/bwhqch1765876319.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Shuto Machino",
+    "overall": 76,
+    "club": "Holstein Kiel",
+    "nationality": "Japan",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/6k0vdb1756313727.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Lewis Holtby",
+    "overall": 76,
+    "club": "Holstein Kiel",
+    "nationality": "Germany",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/n3ba4t1764534669.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Morgan Guilavogui",
+    "overall": 76,
+    "club": "FC St. Pauli",
+    "nationality": "Guinea",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/dka66r1775333094.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Oladapo Afolayan",
+    "overall": 76,
+    "club": "FC St. Pauli",
+    "nationality": "England",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ezw1a21788363313.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Manolis Saliakas",
+    "overall": 76,
+    "club": "FC St. Pauli",
+    "nationality": "Greece",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/ytga2o1763568046.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Jordan Siebatcheu",
+    "overall": 76,
+    "club": "1. FC Union Berlin",
+    "nationality": "United States",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/9phywb1695110435.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Yorbe Vertessen",
+    "overall": 76,
+    "club": "1. FC Union Berlin",
+    "nationality": "Belgium",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/m9gblf1786009876.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  },
+  {
+    "name": "Marc Bernal",
+    "overall": 75,
+    "club": "FC Barcelona",
+    "nationality": "Spain",
+    "image": "https://r2.thesportsdb.com/images/media/player/cutout/wm6np51768321476.png",
+    "tsdbPlayer": "NOT FOUND",
+    "tsdbTeam": "UNKNOWN",
+    "tsdbSport": "UNKNOWN"
+  }
+]

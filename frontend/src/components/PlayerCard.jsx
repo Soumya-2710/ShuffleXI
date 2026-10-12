@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSquad } from '../context/SquadContext';
+import PlayerAvatar from './PlayerAvatar';
+import { getFCPlayerName } from '../utils/fcFormatting';
 import './PlayerCard.css';
 
 const PlayerCard = ({ player, onSelectForSlot, isSlotPicker = false, currentSlotGroup = null }) => {
@@ -28,7 +30,6 @@ const PlayerCard = ({ player, onSelectForSlot, isSlotPicker = false, currentSlot
     e.preventDefault();
     e.stopPropagation();
 
-    // Find first empty slot that matches natural group, or first empty slot overall
     let targetIndex = formationSlots.findIndex(
       (slot, idx) => !slots[idx] && slot.group === playerGroup
     );
@@ -42,14 +43,29 @@ const PlayerCard = ({ player, onSelectForSlot, isSlotPicker = false, currentSlot
     }
   };
 
+  const fcSurname = getFCPlayerName(player.name);
+
   return (
     <div className={`player-card ${getTierClass(player.overall)}`}>
       <div className="player-card-header">
         <div className="player-badges">
+          {player.number && (
+            <span className="player-number-badge" title={`Squad #${player.number}`}>
+              #{player.number}
+            </span>
+          )}
           <span className={`player-pos-badge ${getPositionBadgeClass(player.position)}`}>
             {player.position}
           </span>
           <span className="player-nat">{player.nationality}</span>
+          {player.age && (
+            <span className="player-age-badge" title={`Age: ${player.age} years`}>
+              {player.age}y
+            </span>
+          )}
+          {player.club?.logo && (
+            <img src={player.club.logo} alt={player.club.name} className="player-card-club-logo" />
+          )}
         </div>
         <div className="player-ovr-badge">
           <span className="ovr-number">{player.overall}</span>
@@ -58,9 +74,12 @@ const PlayerCard = ({ player, onSelectForSlot, isSlotPicker = false, currentSlot
       </div>
 
       <div className="player-card-body">
-        <h4 className="player-name">{player.name}</h4>
+        <PlayerAvatar player={player} size="card" />
+        <h4 className="player-name" title={player.name}>
+          {fcSurname}
+        </h4>
         <p className="player-team">
-          {player.club?.name || 'Club'} • {player.league?.name || 'League'}
+          {player.name !== fcSurname ? player.name : ''} {player.club?.name ? `• ${player.club.name}` : ''}
         </p>
 
         {isSlotPicker && currentSlotGroup && !isOptimalPosition && (

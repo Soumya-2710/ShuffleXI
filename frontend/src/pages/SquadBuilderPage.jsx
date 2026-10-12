@@ -4,6 +4,7 @@ import TeamRating from '../components/TeamRating';
 import PlayerSelectModal from '../components/PlayerSelectModal';
 import { useSquad } from '../context/SquadContext';
 import api from '../api/axiosClient';
+import playerImageMap from '../data/playerImageMap.json';
 import './SquadBuilderPage.css';
 
 const SquadBuilderPage = () => {
@@ -48,7 +49,11 @@ const SquadBuilderPage = () => {
           if (!found) {
             found = allPlayers.find((p) => !usedIds.has(p._id));
           }
-          if (found) usedIds.add(found._id);
+          if (found) {
+            usedIds.add(found._id);
+            const img = found.image || playerImageMap[found.name]?.image || null;
+            return { ...found, image: img };
+          }
           return found;
         };
 
@@ -82,9 +87,12 @@ const SquadBuilderPage = () => {
       <div className="container">
         <div className="squad-builder-header">
           <div>
-            <h1 className="page-title">4-3-3 Squad Builder</h1>
+            <div className="badge badge-green" style={{ marginBottom: '8px', display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 800 }}>
+              <span style={{ fontSize: '10px' }}>▼</span> EA SPORTS FC 26 — ULTIMATE TEAM
+            </div>
+            <h1 className="page-title">Tactical 4-3-3 Squad Builder</h1>
             <p className="page-subtitle">
-              Click any slot on the pitch to assign a player. Manage position chemistry and calculate your team rating.
+              Click any slot on the pitch to assign real 2026/27 stars. Maximize 33-point FC chemistry and optimize your Team OVR.
             </p>
           </div>
 

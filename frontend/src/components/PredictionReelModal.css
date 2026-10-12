@@ -1,0 +1,679 @@
+/* ============================================================
+   EA FC Mobile 26 Cinematic Prediction Reel Modal Styles
+   Single-Page Viewport Optimization (NO Scrolling - Fits 100vh)
+   ============================================================ */
+
+.reel-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(3, 7, 18, 0.96);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(6px, 1.5vh, 16px);
+  overflow: hidden; /* Strict Single Page - Zero Vertical Scroll */
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
+  box-sizing: border-box;
+  animation: reelFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Close button in top-right */
+.reel-close-btn {
+  position: absolute;
+  top: clamp(10px, 2vh, 20px);
+  right: clamp(10px, 2vw, 24px);
+  z-index: 30;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reel-close-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@keyframes reelFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Background Stadium Atmosphere & Floodlights */
+.reel-backdrop-flair {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reel-light-beam {
+  position: absolute;
+  top: -100px;
+  width: 280px;
+  height: 900px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(0, 230, 118, 0.16) 0%, rgba(0, 230, 118, 0) 70%);
+  filter: blur(40px);
+  transform-origin: top center;
+}
+
+.beam-left {
+  left: 8%;
+  transform: rotate(25deg);
+  animation: beamSwayLeft 7s ease-in-out infinite alternate;
+}
+
+.beam-right {
+  right: 8%;
+  transform: rotate(-25deg);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.16) 0%, rgba(255, 215, 0, 0) 70%);
+  animation: beamSwayRight 7s ease-in-out infinite alternate;
+}
+
+@keyframes beamSwayLeft {
+  from {
+    transform: rotate(18deg) scaleX(0.9);
+  }
+  to {
+    transform: rotate(32deg) scaleX(1.15);
+  }
+}
+
+@keyframes beamSwayRight {
+  from {
+    transform: rotate(-18deg) scaleX(0.9);
+  }
+  to {
+    transform: rotate(-32deg) scaleX(1.15);
+  }
+}
+
+.reel-stadium-fog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  background: radial-gradient(circle at 50% 100%, rgba(0, 230, 118, 0.08) 0%, transparent 80%);
+}
+
+/* Modal Core Box (Strictly bounded to 100% viewport, zero scroll) */
+.reel-modal-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Compact Header Badge */
+.reel-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: clamp(0.6rem, 1.1vh, 0.7rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: clamp(2px, 0.8vh, 6px);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* Progress Stepper */
+.reel-stage-stepper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: clamp(4px, 1vh, 8px);
+  width: 100%;
+  max-width: 380px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: clamp(0.65rem, 1.2vh, 0.72rem);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.step-pill.active {
+  background: rgba(0, 230, 118, 0.15);
+  border-color: #00e676;
+  color: #00e676;
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.35);
+  transform: scale(1.03);
+}
+
+.step-pill.completed {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+.step-num {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.step-pill.active .step-num {
+  background: #00e676;
+  color: #000;
+}
+
+.step-pill.completed .step-num {
+  background: #ffd700;
+  color: #000;
+}
+
+.step-connector {
+  flex: 1;
+  max-width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Stage Box */
+.reel-stage-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.animate-enter {
+  animation: stageEnter 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+@keyframes stageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.reel-stage-heading {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #fff;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Spinner Cards for League & Club */
+.reel-spinner-card {
+  width: clamp(210px, 28vh, 250px);
+  height: clamp(230px, 34vh, 290px);
+  border-radius: 18px;
+  background: linear-gradient(165deg, rgba(25, 34, 56, 0.9) 0%, rgba(9, 14, 26, 0.95) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reel-spinner-card.is-spinning {
+  animation: spinnerJitter 0.08s infinite alternate;
+  border-color: rgba(0, 230, 118, 0.4);
+  box-shadow: 0 0 25px rgba(0, 230, 118, 0.25);
+}
+
+@keyframes spinnerJitter {
+  from {
+    transform: translateY(-2px) scale(0.99);
+  }
+  to {
+    transform: translateY(2px) scale(1.01);
+  }
+}
+
+.reel-spinner-card.is-locked-in {
+  transform: scale(1.04);
+  border-color: #ffd700;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.5), inset 0 0 20px rgba(255, 215, 0, 0.2);
+  animation: lockInImpact 0.4s cubic-bezier(0.25, 1.4, 0.5, 1);
+}
+
+@keyframes lockInImpact {
+  0% {
+    transform: scale(0.88);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
+.locked-badge-pulse {
+  position: absolute;
+  bottom: 10px;
+  background: #ffd700;
+  color: #000;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  animation: pulseBadge 1.2s infinite alternate;
+}
+
+@keyframes pulseBadge {
+  from {
+    transform: scale(0.96);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* League Card Specifics */
+.league-flag-huge {
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+}
+
+.league-logo-wrap {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.league-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8));
+}
+
+.league-name-banner {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+}
+
+.league-country-tag {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Club Card Specifics */
+.club-crest-huge {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.club-crest-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.8));
+}
+
+.club-fallback-emoji {
+  font-size: 3.5rem;
+}
+
+.club-name-banner {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.club-league-pill {
+  font-size: 0.74rem;
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.12);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+/* ========================================================
+   WALKOUT STAGE (Suspense Sequence)
+   ======================================================== */
+.walkout-doors-stage {
+  width: clamp(240px, 32vh, 280px);
+  height: clamp(260px, 36vh, 320px);
+  border-radius: 18px;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 215, 0, 0.12) 0%, rgba(5, 10, 20, 0.95) 80%);
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.25);
+}
+
+.walkout-clue {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.35s cubic-bezier(0.3, 1.4, 0.5, 1);
+  z-index: 10;
+}
+
+.walkout-clue.hidden {
+  opacity: 0;
+  transform: scale(0.4) translateY(-25px);
+  pointer-events: none;
+}
+
+.walkout-clue.revealed {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.clue-label {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.clue-pos {
+  top: 14px;
+  left: 18px;
+}
+
+.clue-val-pos {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #00e676;
+  text-shadow: 0 0 8px rgba(0, 230, 118, 0.6);
+}
+
+.clue-nat {
+  top: 14px;
+  right: 18px;
+}
+
+.clue-val-nat {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #60a5fa;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+}
+
+.clue-ovr {
+  top: 50px;
+}
+
+.clue-val-ovr {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffd700;
+  text-shadow: 0 0 16px rgba(255, 215, 0, 0.8);
+}
+
+.walkout-silhouette-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  filter: brightness(0.2) contrast(1.4);
+}
+
+.silhouette-aura-pulse {
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+  animation: auraPulse 1s infinite alternate;
+}
+
+@keyframes auraPulse {
+  from {
+    transform: scale(0.9);
+    opacity: 0.3;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* ========================================================
+   SHOWCASE STAGE (Final Card Slam - Strict Single-Page Fit)
+   ======================================================== */
+.showcase-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.animate-slam {
+  animation: cardSlamImpact 0.4s cubic-bezier(0.2, 1.2, 0.3, 1);
+}
+
+@keyframes cardSlamImpact {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(-30px);
+  }
+  70% {
+    transform: scale(1.06) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.showcase-announcement {
+  margin-bottom: clamp(2px, 0.6vh, 6px);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.showcase-super-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: clamp(0.62rem, 1.1vh, 0.72rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  margin-bottom: 1px;
+}
+
+.showcase-player-name {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2.1vh, 1.35rem);
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9);
+}
+
+.showcase-club-line {
+  font-size: clamp(0.68rem, 1.3vh, 0.76rem);
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.showcase-card-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(2px, 0.8vh, 8px) 0;
+  overflow: visible;
+}
+
+/* Compact Actions Toolbar */
+.showcase-actions-bar {
+  flex-shrink: 0;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 380px;
+  justify-content: center;
+  margin-top: auto;
+  padding: 4px 0 2px;
+}
+
+.btn-confirm-place {
+  flex: 2;
+  background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
+  color: #031525;
+  font-family: var(--font-heading);
+  font-size: clamp(0.82rem, 1.5vh, 0.92rem);
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  padding: clamp(8px, 1.3vh, 11px) 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 230, 118, 0.5);
+  transition: all 0.2s ease;
+}
+
+.btn-confirm-place:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 230, 118, 0.7);
+}
+
+.btn-reroll-reel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  color: #ffd700;
+  font-family: var(--font-heading);
+  font-size: clamp(0.74rem, 1.4vh, 0.82rem);
+  font-weight: 800;
+  padding: clamp(8px, 1.3vh, 11px) 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reroll-reel:hover {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+/* Responsive constraints to guarantee single page fit */
+@media (max-height: 680px) {
+  .reel-header-badge {
+    display: none; /* Hide header pill on very compact screens to give card full room */
+  }
+  .reel-stage-stepper {
+    margin-bottom: 4px;
+  }
+  .showcase-announcement {
+    margin-bottom: 2px;
+  }
+  .showcase-card-stage {
+    margin: 2px 0;
+  }
+}

@@ -84,13 +84,20 @@ graph TB
 
 ```
 football-game/
-├── package.json                   # Root orchestrator
+├── package.json                   # Root orchestrator & Docker scripts
+├── docker-compose.yml             # Local development Docker Compose orchestrator
+├── docker-compose.prod.yml        # Production Docker Compose orchestrator
+├── .dockerignore                  # Docker build context exclusion rules
 ├── .gitignore                     # Excludes node_modules/, .env, dist/, build logs
 ├── .env.example                   # Root environment template
+├── .env.docker.example            # Docker Compose environment template
 ├── README.md                      # Project documentation and quickstart
 ├── TECHNICAL_PLAN.md              # Detailed architecture and engineering plan (this file)
 │
 └── frontend/                      # Main Workspace (React + Vite + Backend)
+    ├── Dockerfile                 # Multi-stage frontend Dockerfile (dev + prod Nginx)
+    ├── .dockerignore              # Frontend Docker context exclusions
+    ├── nginx.conf                 # Production Nginx reverse-proxy & SPA server config
     ├── index.html                 # HTML shell with meta tags and Google Fonts
     ├── vite.config.js             # Vite build options + proxy config (/api -> :5000)
     ├── package.json               # Combined scripts (concurrently Vite + Express)
@@ -120,6 +127,8 @@ football-game/
     │       └── SquadBuilderPage.jsx / .css # 4-3-3 tactical board with Auto-Draft
     │
     └── backend/                   # Embedded Backend Service (Node.js + Express)
+        ├── Dockerfile             # Multi-stage backend Dockerfile (dev + prod)
+        ├── .dockerignore          # Backend Docker context exclusions
         ├── server.js              # Express app entry, middleware stack, listener
         ├── package.json           # Express, Mongoose, Dotenv, Cors
         ├── .env                   # Local secrets (PORT=5000, MONGO_URI)
@@ -259,3 +268,56 @@ $$\text{Effective Overall} = \begin{cases} \text{Overall}, & \text{if } \text{Pl
    - MongoDB `Squad` model storing multiple named formations per user account.
 4. **V5 — Real-Time Multiplayer Gameplay**:
    - WebSocket / Socket.IO integration for live head-to-head matches and tactical substitutions.
+
+---
+
+## 8. Docker Containerization Architecture & Orchestration
+
+The application is fully containerized using multi-stage Docker builds and Docker Compose to guarantee environment parity across development, staging, and production environments.
+
+### 8.1 Multi-Stage Container Blueprint
+
+```mermaid
+graph TD
+    subgraph Host["Host Machine (Windows / macOS / Linux)"]
+        Browser["User Browser (:3000 / :80)"]
+    end
+
+    subgraph DockerNetwork["Bridge Network (football-network)"]
+        subgraph FrontContainer["football-frontend Container"]
+            ViteDev["Vite Dev Server (:3000)<br/>--host 0.0.0.0<br/>Polling Watcher"]
+            NginxProd["Nginx Reverse Proxy (:80)<br/>Gzip + Static Cache + SPA Router"]
+        end
+
+        subgraph BackContainer["football-backend Container"]
+            ExpressDev["Express API (:5000)<br/>Node 20 Alpine<br/>Native --watch Reloading"]
+        end
+
+        subgraph DBContainer["football-mongodb Container"]
+            MongoInstance["MongoDB 7.0 (:27017)<br/>Healthchecked Ping"]
+            Volume[("Persistent Volume:<br/>football_game_mongodb_data")]
+        end
+    end
+
+    Browser -->|HTTP :3000| ViteDev
+    Browser -->|HTTP :80| NginxProd
+    ViteDev -->|Internal Proxy /api| ExpressDev
+    NginxProd -->|Reverse Proxy /api| ExpressDev
+    ExpressDev -->|mongodb://mongodb:27017| MongoInstance
+    MongoInstance --- Volume
+```
+
+### 8.2 Service Matrix & Resource Boundaries
+
+| Service | Base Image | Internal Port | Host Port | Role | Persistence / Volumes |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| **`mongodb`** | `mongo:7.0` | `27017` | `27017` | Primary document database | Named volume `mongodb_data:/data/db` |
+| **`backend`** | `node:20-alpine` | `5000` | `5000` | Express REST API | Bind-mount `./frontend/backend:/app`, anonymous `/app/node_modules` |
+| **`frontend`** | `node:20-alpine` (Dev) / `nginx:alpine` (Prod) | `3000` / `80` | `3000` / `80` | React UI & reverse proxy | Bind-mount `./frontend:/app`, anonymous `/app/node_modules` |
+| **`seed`** (Profile) | `node:20-alpine` | N/A | N/A | One-shot database seeder | Temporary container, exit on complete |
+
+### 8.3 Cross-Platform Volume & HMR Guarantees
+- **Anonymous Volume Mounts (`/app/node_modules`)**: Prevents host machine operating system node binaries (e.g. Windows `.node` files) from polluting container Linux environments.
+- **Filesystem Polling (`CHOKIDAR_USEPOLLING=true`)**: Resolves virtual filesystem inotify event drops commonly found in Windows WSL2 and macOS VirtioFS volume mounts, providing guaranteed instantaneous Hot Module Replacement.
+- **Zero-Config Seed Profile**: Database can be populated on first boot with `docker compose run --rm backend npm run seed` without polluting system PATH.
+

@@ -22,13 +22,19 @@
   color: var(--text-secondary);
 }
 
+.rating-badges-cluster {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 .rating-overall-badge {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(0, 230, 118, 0.2));
   border: 1.5px solid var(--accent-gold);
@@ -43,6 +49,33 @@
 }
 
 .overall-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+}
+
+.rating-chem-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(0, 230, 118, 0.25), rgba(0, 176, 255, 0.2));
+  border: 1.5px solid var(--accent-green);
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.25);
+}
+
+.chem-value {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--text-2xl);
+  line-height: 1;
+  color: var(--accent-green);
+}
+
+.chem-label {
   font-size: 0.65rem;
   font-weight: 800;
   color: var(--text-secondary);

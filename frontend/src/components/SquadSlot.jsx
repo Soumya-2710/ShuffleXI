@@ -1,4 +1,6 @@
 import React from 'react';
+import PlayerAvatar from './PlayerAvatar';
+import { getFCPlayerName, getCardTier } from '../utils/fcFormatting';
 import './SquadSlot.css';
 
 const SquadSlot = ({
@@ -19,19 +21,24 @@ const SquadSlot = ({
     penalty = isInPosition ? 0 : 3;
   }
 
+  const effectiveOvr = isFilled ? Math.max(1, player.overall - penalty) : 0;
+  const tierClass = isFilled ? getCardTier(player.overall) : '';
+  const surname = isFilled ? getFCPlayerName(player.name) : '';
+
   return (
     <div
-      className={`squad-slot ${isFilled ? 'filled' : 'empty'} ${
-        isFilled && !isInPosition ? 'slot-penalty' : ''
+      className={`fc-squad-slot ${isFilled ? 'is-filled' : 'is-empty'} ${tierClass} ${
+        isFilled && !isInPosition ? 'is-oop' : ''
       }`}
       onClick={() => onSlotClick(slotDef.index)}
     >
       {isFilled ? (
-        <div className="slot-player-content">
+        <div className="fc-card-frame">
+          {/* Subtle Remove Button on hover */}
           <button
             type="button"
-            className="slot-remove-btn"
-            title="Remove player from squad"
+            className="fc-card-remove"
+            title="Remove from squad"
             onClick={(e) => {
               e.stopPropagation();
               onRemovePlayer(slotDef.index);
@@ -40,26 +47,59 @@ const SquadSlot = ({
             ✕
           </button>
 
-          <div className="slot-ovr-tag">
-            <span className="slot-ovr-val">
-              {player.overall - penalty}
-            </span>
-            {penalty > 0 && <span className="slot-penalty-indicator">(-3)</span>}
+          {/* Card Top Row: Rating & Pos on Left, Club Logo on Right */}
+          <div className="fc-card-header">
+            <div className="fc-rating-stack">
+              <span className="fc-ovr-num">{effectiveOvr}</span>
+              <span className="fc-pos-pill">{player.position}</span>
+              {penalty > 0 && <span className="fc-penalty-pill">-3</span>}
+            </div>
+
+            <div className="fc-crest-stack">
+              {player.club?.logo ? (
+                <img
+                  src={player.club.logo}
+                  alt={player.club?.name || 'Club'}
+                  className="fc-crest-img"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+              ) : (
+                <span className="fc-crest-fallback">⚽</span>
+              )}
+            </div>
           </div>
 
-          <div className="slot-pos-badge">{player.position}</div>
-          <span className="slot-player-name">{player.name}</span>
+          {/* Central Cutout Stage */}
+          <div className="fc-avatar-stage">
+            <PlayerAvatar player={player} size="fc-slot" />
+          </div>
 
+          {/* Bottom Nametag Ribbon */}
+          <div className="fc-nametag-banner">
+            <span className="fc-nametag-text">{surname}</span>
+            <div className="fc-rank-stars">
+              <span className="star-gem">★</span>
+              <span className="star-gem">★</span>
+              <span className="star-gem">★</span>
+            </div>
+          </div>
+
+          {/* Out of position badge */}
           {!isInPosition && (
-            <span className="slot-oop-pill" title="Out of natural position">
+            <div className="fc-oop-tag" title="Out of Position (-3 OVR penalty)">
               OOP
-            </span>
+            </div>
           )}
         </div>
       ) : (
-        <div className="slot-empty-content">
-          <span className="slot-target-label">{slotDef.label}</span>
-          <span className="slot-plus-icon">+</span>
+        /* Empty Slot Holographic Shield */
+        <div className="fc-empty-hologram">
+          <div className="fc-hologram-glow"></div>
+          <span className="fc-empty-pos">{slotDef.label}</span>
+          <div className="fc-empty-plus-circle">
+            <span>+</span>
+          </div>
+          <span className="fc-empty-tag">ADD</span>
         </div>
       )}
     </div>

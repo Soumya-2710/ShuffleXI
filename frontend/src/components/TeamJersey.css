@@ -1,0 +1,40 @@
+.team-jersey-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.45));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.team-jersey-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.team-jersey-wrap.jersey-xs {
+  width: 32px;
+  height: 28px;
+}
+
+.team-jersey-wrap.jersey-sm {
+  width: 48px;
+  height: 42px;
+}
+
+.team-jersey-wrap.jersey-md {
+  width: 80px;
+  height: 70px;
+}
+
+.team-jersey-wrap.jersey-lg {
+  width: 120px;
+  height: 105px;
+}
+
+.team-jersey-wrap.jersey-xl {
+  width: 160px;
+  height: 140px;
+}
